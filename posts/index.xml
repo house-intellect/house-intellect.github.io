@@ -1,0 +1,310 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Productivity Tracking</title>
+		<link>https://house-intellect.github.io/posts/</link>
+		<description>Recent content in Posts on Productivity Tracking</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 19 Mar 2020 05:12:16 +0300</lastBuildDate>
+		<atom:link href="https://house-intellect.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item turbo="true">
+			<title>Privacy Policy</title>
+			<link>https://house-intellect.github.io/posts/privacy_policy/</link>
+			<pubDate>Thu, 19 Mar 2020 05:12:16 +0300</pubDate>
+			
+			<guid>https://house-intellect.github.io/posts/privacy_policy/</guid>
+			<description>Your privacy is important to us. It is house-intellect&amp;rsquo;s policy to respect your privacy regarding any information our application requires to provide the desired service. We only ask for personal information when we truly need it to provide a service to you. We do not collect neither store any of your data. We don’t share any personally identifying information publicly or with third-parties. Our app may link to external sites that are not operated by us.</description>
+			<turbo:content><![CDATA[<p>Your privacy is important to us. It is house-intellect&rsquo;s policy to respect your
+privacy regarding any information our application requires to
+provide the desired service. We only ask for personal information when we
+truly need it to provide a service to you. We do not collect neither store any of
+your data. We don’t share any personally identifying information publicly or
+with third-parties. Our app may link to external sites that are not operated by
+us. Please be aware that we have no control over the content and practices
+of these sites, and cannot accept responsibility or liability for their respective
+privacy policies. You are free to refuse the application request for your
+personal information, with the understanding that we may be unable to
+provide you with some of your desired services. Your continued use of our
+application will be regarded as acceptance of our practices around privacy
+and personal information. This policy is effective as of 13 February 2020.</p>
+]]></turbo:content>
+			<content type="html"><![CDATA[<p>Your privacy is important to us. It is house-intellect&rsquo;s policy to respect your
+privacy regarding any information our application requires to
+provide the desired service. We only ask for personal information when we
+truly need it to provide a service to you. We do not collect neither store any of
+your data. We don’t share any personally identifying information publicly or
+with third-parties. Our app may link to external sites that are not operated by
+us. Please be aware that we have no control over the content and practices
+of these sites, and cannot accept responsibility or liability for their respective
+privacy policies. You are free to refuse the application request for your
+personal information, with the understanding that we may be unable to
+provide you with some of your desired services. Your continued use of our
+application will be regarded as acceptance of our practices around privacy
+and personal information. This policy is effective as of 13 February 2020.</p>
+]]></content>
+		</item>
+		
+		<item turbo="true">
+			<title>NFC progress report, instructions and monitoring</title>
+			<link>https://house-intellect.github.io/posts/nfc_reports/</link>
+			<pubDate>Thu, 19 Mar 2020 05:05:18 +0300</pubDate>
+			
+			<guid>https://house-intellect.github.io/posts/nfc_reports/</guid>
+			<description>Associates NFC tags attached to equipment with corresponding progress reports Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to establish associations of NFC tags to relevant Google Form Surveys links stored in description fields of calendar maintenance events: the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
+			<turbo:content><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/xCiGhNuGPpaRAkij7"
+  data-title=""
+  data-description="Business logic of NFC Progress Report Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/B7tuD5xrXTlMvbNCk9m54DHMSMfkOn9V3r5qa_aUehkL5m6jemPJub22KX767vvMB0V1nCtWKA9jwiZYHFCGqHT36l3MbAcmQ7J9LR2KxnijgGUozBIvmtocd-yLLSYwWhKASXoZB2E=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/0aEyx6auVQpVH048E16HpBRPnOjhpgaTyI1f7nKIq7vAwq9iWQrsbWRsRHxrNCqVYL0pIs5DrAxV1y3FacaflaDCmJq-61eRwLRJldYOnCgb7lfgKkUinxyCRvh0kFhVTzhBQZgKeck=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/40OKEjCQGAqQPBVSjabL8IYTEoVDzAzpywtB-quO0W1KYcavi-iZN821Cxaftdt7fjMvvZPIx8_RMEUXdtcp1Ebe26ayZ1LNsaO02lnUcfasbnSZakFZE5dhuayPpqoA1rioIjWYC0M=w1030-h580"></object>
+   <object data="https://lh3.googleusercontent.com/MDK4PC28YwqRaEimeJU33f8kjaRbdGmVDfXaqmaReySDQ8dHk-MPq2HmEGrAj_lP3R8wT-C0q1nnq1gx4aVwj7qU-e4YRziDaDw-orHLj6ftnryAphbcfnnn5d9qozDBHBAUEd5aywU=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/8YO2pBP7ANt6tMj1kwu2ZZnoMxOU00YYvMs3-DCToBuHJ3COzVHQURTQQjMjSvdgViyXNJTWRhjeuuRjhoAjkBCM7baelASTCy6tzR1SyfsDb_XIDWW4yY5Zh8E2R1Hq_wNGYU7mttY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/fZKiJ1BDckPufopfDV61xqoFmO9_qwcUIx9lBCjJDmrtvhZaQUuEPrzgkJsayMeQ-dhoImt3mXP6qvu3fxJTRC147P70s9OsXJOxTfulVnTX3f3y7XjrpkVbswF6KqdUChg7P_WYPlY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/RNAgPCYHVRISPgkHbgGjNXtB2ZPMFyc9QVNLk0TH4_9AvFQNwTCJ6l-FUEgZ3Eg0lUshAX88CsAaT558R5V5A1wU2pg-MKePoUOBP1-Sga1miKACf2tHjm-8KnepKfeo3fHU5zTGIX4=w1030-h580"></object>
+</div>
+<script src="/photo.js" async></script>
+<div id="mobile" class="pa-carousel-widget"
+  data-link="https://photos.app.goo.gl/KHp98b9GgshMdcW68"
+  data-title=""
+  data-description="Business logic of NFC Progress Report Android app"
+  data-background-color="#232427">
+  <object data="https://lh3.googleusercontent.com/-evY6HQdeJRzBA1z47oO07p7erReZtz37E3tCFAjVom4Vpe9W8LzSe4y9R2PHCXfW-wt6xv6zGqnGEWx05-sqcLML3k1sx-dl002CvZuyg2CwjV0zFdDpkQFZdO-8OxLdR8KZhaJXqY=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/MSOka_SACjk6h5t16hDjiVhbUOcCadl29cNLjrAa5WAPKcq2VUVKrG8E8_-ZPPF89LlI8hNB7ATiOsfCZNH3MJc6ivoIi1lfnhRtYY8blTbtZLz2WlBSyST1H2MrnMr4hG_Ffpb1gjo=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/2UDo7f7LKUnxdnMlBtp8L06fJj5t05WIT48g5ZD7qL2VxdQmnarDQ-OUCwTK8el72sLzm_Ki9aShZWEDTYDKc3tGmbmv4IVh5-ONIB7gv6VU86g1EXleQ6Vwgen03ZE6zao-L48wRqU=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/sRCacP61X17X9dkryAS084Mn1fvrzCsIUKYX1jwxqtIPDdm7flgCh5_MRdYEAVhq2BfRIft6pbxLVZUsy0Wgi2ZUreEuLpJnQyxfTsIcifjJYhmPbU3ZhyUDzNjQNX_kQgrZvnnTE1Y=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/HnyvVmbZFKnW_NTXI5SJ8WISS2rT-Rw4qSI8VQuUvGn1zNaKzud-lsYftU0UcTfliYNfHxkxkejnUpBMAAjDKqtjPRF22njFicUQdBNLqE0YqHXkF4VpE_mOpJy3Ew2miiQTnOsxq70=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/nvZZdYJP-_x4Lro-etXbDKSq4YdxR4xBkBfavhyYpIQnD1TrEbHZcDS5TJsE9Yo9PKRJX9O5tUuFPiaUmKCPNI9zAKE1qAzCCJaFOHNQA6ymvfhQYlntQJgm8uPvQw5pwBiSG-e7Pao=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/527tDUYFGcyke3-UBVI8skIZmWvos6kR8_HbhcJKK7eH_3m4Unfzwltmlcoo79CuNBragfOq4d6O0nqQ6i5pobshLqPz_vNpfwNp13T56j8m7TssPEZjgxeeyRjlCtd0oDoRGVtSw2Q=w893-h1700"></object>
+</div>
+<h3 id="associates-nfc-tags-attached-to-equipment-with-corresponding-progress-reports">Associates NFC tags attached to equipment with corresponding progress reports</h3>
+<p><em><strong>Equipment maintenance instructions</strong></em> are shown to technicians in charge upon scanning  <a href="https://bit.ly/390uh9p">NFC tags</a> attached to the respective equipment. This app is used to establish associations of  <a href="https://bit.ly/390uh9p">NFC tags</a> to relevant <a href="https://www.google.com/forms/about/">Google Form Surveys</a> links stored in description fields of calendar maintenance events: the association between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs is established by using <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> which associates  <a href="https://bit.ly/390uh9p">NFC tags</a> with corresponding task lists. Manager creates these events in <a href="https://calendar.google.com/calendar/r">Google Calendar</a> and places <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys URLs into event description fields. <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> creates a calendar to share with technicians who use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan the  <a href="https://bit.ly/390uh9p">NFC tags</a> and fill in the maintenance report forms. <a href="https://www.google.com/forms/about/">Google Form Surveys</a> based task lists contain <em><strong>maintenance instruction manuals and job descriptions</strong></em> relevant to the specific set of equipment marked by the <a href="https://bit.ly/390uh9p">NFC tag</a>. Associations between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs are automatically shared with technicians via Google accounts calendar sharing. Technicians use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan  <a href="https://bit.ly/390uh9p">NFC tags</a> and to fill out the <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys shown to them as a result of scanning. Survey results submitted by the service personnel through <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys can be stored arbitrarily in Google Spreadsheets in order to <em><strong>significantly increase the degree of supervisor&rsquo;s control</strong></em>. Automatic delivery of relevant maintenance manuals to technicians makes it possible to replace the most important workers with less expenses. <em><strong>Progress reports increase transparency of the business process</strong></em>. This solution can also be used to track inventory. <em><strong>Progress reports</strong></em> are kept in corporate <a href="https://www.google.com/forms/about/">Google Forms</a> or <a href="https://products.office.com/en-US/microsoft-teams/group-chat-software">Microsoft Teams</a> platforms.</p>
+<h3 id="to-link-an-nfc-taghttpsbitly390uh9p-to-a-google-formhttpswwwgooglecomformsabout-task-list">To link an <a href="https://bit.ly/390uh9p">NFC tag</a> to a <a href="https://www.google.com/forms/about/">Google Form</a> task list</h3>
+<ol>
+<li>Create a <a href="https://www.google.com/forms/about/">Google Form</a> in your Google Docs</li>
+<li>Create a shortened URL for the created task list by pressing the &ldquo;send&rdquo; button</li>
+<li>Create a new event in your &ldquo;NFC&rdquo; <a href="https://calendar.google.com/calendar/r">Google Calendar</a>, this calendar is created by the app during first launch</li>
+<li>Paste your task list URL into the description field of the new calendar event</li>
+<li>Open the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> and scan a new <a href="https://bit.ly/390uh9p">NFC tag</a></li>
+<li>Select the appropriate calendar event from the events list in edit mode</li>
+<li>Add the technician&rsquo;s account to the access list in &ldquo;Users&rdquo; tab</li>
+<li>Install <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> on the technician&rsquo;s smartphone</li>
+<li>Scan the <a href="https://bit.ly/390uh9p">NFC tag</a> with the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a>. <a href="https://www.google.com/forms/about/">Google Form</a> task list will be shown</li>
+</ol>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports"   target="_blank"  class="book-btn"><b>NFC progress report</b> on Google Play</a>
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3fnPvJjdutOGnDaRczMlKvt8R5lMo-JT2ycnCKCCo_NDD0cNlT8-Vt1JZKi2larl0amHSuTM_kZYkOQ1Bsha9CStfVuT8R66Nd4OcPovCBa4IrSYHvdG1Dq9hb_1zlmcI00D2GDmRam4WkKvyQ8ADs-8g=w1513-h845" alt="Business logic of NFC Progress Reports Android app"></p>
+]]></turbo:content>
+			<content type="html"><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/xCiGhNuGPpaRAkij7"
+  data-title=""
+  data-description="Business logic of NFC Progress Report Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/B7tuD5xrXTlMvbNCk9m54DHMSMfkOn9V3r5qa_aUehkL5m6jemPJub22KX767vvMB0V1nCtWKA9jwiZYHFCGqHT36l3MbAcmQ7J9LR2KxnijgGUozBIvmtocd-yLLSYwWhKASXoZB2E=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/0aEyx6auVQpVH048E16HpBRPnOjhpgaTyI1f7nKIq7vAwq9iWQrsbWRsRHxrNCqVYL0pIs5DrAxV1y3FacaflaDCmJq-61eRwLRJldYOnCgb7lfgKkUinxyCRvh0kFhVTzhBQZgKeck=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/40OKEjCQGAqQPBVSjabL8IYTEoVDzAzpywtB-quO0W1KYcavi-iZN821Cxaftdt7fjMvvZPIx8_RMEUXdtcp1Ebe26ayZ1LNsaO02lnUcfasbnSZakFZE5dhuayPpqoA1rioIjWYC0M=w1030-h580"></object>
+   <object data="https://lh3.googleusercontent.com/MDK4PC28YwqRaEimeJU33f8kjaRbdGmVDfXaqmaReySDQ8dHk-MPq2HmEGrAj_lP3R8wT-C0q1nnq1gx4aVwj7qU-e4YRziDaDw-orHLj6ftnryAphbcfnnn5d9qozDBHBAUEd5aywU=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/8YO2pBP7ANt6tMj1kwu2ZZnoMxOU00YYvMs3-DCToBuHJ3COzVHQURTQQjMjSvdgViyXNJTWRhjeuuRjhoAjkBCM7baelASTCy6tzR1SyfsDb_XIDWW4yY5Zh8E2R1Hq_wNGYU7mttY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/fZKiJ1BDckPufopfDV61xqoFmO9_qwcUIx9lBCjJDmrtvhZaQUuEPrzgkJsayMeQ-dhoImt3mXP6qvu3fxJTRC147P70s9OsXJOxTfulVnTX3f3y7XjrpkVbswF6KqdUChg7P_WYPlY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/RNAgPCYHVRISPgkHbgGjNXtB2ZPMFyc9QVNLk0TH4_9AvFQNwTCJ6l-FUEgZ3Eg0lUshAX88CsAaT558R5V5A1wU2pg-MKePoUOBP1-Sga1miKACf2tHjm-8KnepKfeo3fHU5zTGIX4=w1030-h580"></object>
+</div>
+<script src="/photo.js" async></script>
+<div id="mobile" class="pa-carousel-widget"
+  data-link="https://photos.app.goo.gl/KHp98b9GgshMdcW68"
+  data-title=""
+  data-description="Business logic of NFC Progress Report Android app"
+  data-background-color="#232427">
+  <object data="https://lh3.googleusercontent.com/-evY6HQdeJRzBA1z47oO07p7erReZtz37E3tCFAjVom4Vpe9W8LzSe4y9R2PHCXfW-wt6xv6zGqnGEWx05-sqcLML3k1sx-dl002CvZuyg2CwjV0zFdDpkQFZdO-8OxLdR8KZhaJXqY=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/MSOka_SACjk6h5t16hDjiVhbUOcCadl29cNLjrAa5WAPKcq2VUVKrG8E8_-ZPPF89LlI8hNB7ATiOsfCZNH3MJc6ivoIi1lfnhRtYY8blTbtZLz2WlBSyST1H2MrnMr4hG_Ffpb1gjo=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/2UDo7f7LKUnxdnMlBtp8L06fJj5t05WIT48g5ZD7qL2VxdQmnarDQ-OUCwTK8el72sLzm_Ki9aShZWEDTYDKc3tGmbmv4IVh5-ONIB7gv6VU86g1EXleQ6Vwgen03ZE6zao-L48wRqU=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/sRCacP61X17X9dkryAS084Mn1fvrzCsIUKYX1jwxqtIPDdm7flgCh5_MRdYEAVhq2BfRIft6pbxLVZUsy0Wgi2ZUreEuLpJnQyxfTsIcifjJYhmPbU3ZhyUDzNjQNX_kQgrZvnnTE1Y=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/HnyvVmbZFKnW_NTXI5SJ8WISS2rT-Rw4qSI8VQuUvGn1zNaKzud-lsYftU0UcTfliYNfHxkxkejnUpBMAAjDKqtjPRF22njFicUQdBNLqE0YqHXkF4VpE_mOpJy3Ew2miiQTnOsxq70=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/nvZZdYJP-_x4Lro-etXbDKSq4YdxR4xBkBfavhyYpIQnD1TrEbHZcDS5TJsE9Yo9PKRJX9O5tUuFPiaUmKCPNI9zAKE1qAzCCJaFOHNQA6ymvfhQYlntQJgm8uPvQw5pwBiSG-e7Pao=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/527tDUYFGcyke3-UBVI8skIZmWvos6kR8_HbhcJKK7eH_3m4Unfzwltmlcoo79CuNBragfOq4d6O0nqQ6i5pobshLqPz_vNpfwNp13T56j8m7TssPEZjgxeeyRjlCtd0oDoRGVtSw2Q=w893-h1700"></object>
+</div>
+<h3 id="associates-nfc-tags-attached-to-equipment-with-corresponding-progress-reports">Associates NFC tags attached to equipment with corresponding progress reports</h3>
+<p><em><strong>Equipment maintenance instructions</strong></em> are shown to technicians in charge upon scanning  <a href="https://bit.ly/390uh9p">NFC tags</a> attached to the respective equipment. This app is used to establish associations of  <a href="https://bit.ly/390uh9p">NFC tags</a> to relevant <a href="https://www.google.com/forms/about/">Google Form Surveys</a> links stored in description fields of calendar maintenance events: the association between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs is established by using <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> which associates  <a href="https://bit.ly/390uh9p">NFC tags</a> with corresponding task lists. Manager creates these events in <a href="https://calendar.google.com/calendar/r">Google Calendar</a> and places <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys URLs into event description fields. <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> creates a calendar to share with technicians who use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan the  <a href="https://bit.ly/390uh9p">NFC tags</a> and fill in the maintenance report forms. <a href="https://www.google.com/forms/about/">Google Form Surveys</a> based task lists contain <em><strong>maintenance instruction manuals and job descriptions</strong></em> relevant to the specific set of equipment marked by the <a href="https://bit.ly/390uh9p">NFC tag</a>. Associations between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs are automatically shared with technicians via Google accounts calendar sharing. Technicians use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan  <a href="https://bit.ly/390uh9p">NFC tags</a> and to fill out the <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys shown to them as a result of scanning. Survey results submitted by the service personnel through <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys can be stored arbitrarily in Google Spreadsheets in order to <em><strong>significantly increase the degree of supervisor&rsquo;s control</strong></em>. Automatic delivery of relevant maintenance manuals to technicians makes it possible to replace the most important workers with less expenses. <em><strong>Progress reports increase transparency of the business process</strong></em>. This solution can also be used to track inventory. <em><strong>Progress reports</strong></em> are kept in corporate <a href="https://www.google.com/forms/about/">Google Forms</a> or <a href="https://products.office.com/en-US/microsoft-teams/group-chat-software">Microsoft Teams</a> platforms.</p>
+<h3 id="to-link-an-nfc-taghttpsbitly390uh9p-to-a-google-formhttpswwwgooglecomformsabout-task-list">To link an <a href="https://bit.ly/390uh9p">NFC tag</a> to a <a href="https://www.google.com/forms/about/">Google Form</a> task list</h3>
+<ol>
+<li>Create a <a href="https://www.google.com/forms/about/">Google Form</a> in your Google Docs</li>
+<li>Create a shortened URL for the created task list by pressing the &ldquo;send&rdquo; button</li>
+<li>Create a new event in your &ldquo;NFC&rdquo; <a href="https://calendar.google.com/calendar/r">Google Calendar</a>, this calendar is created by the app during first launch</li>
+<li>Paste your task list URL into the description field of the new calendar event</li>
+<li>Open the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> and scan a new <a href="https://bit.ly/390uh9p">NFC tag</a></li>
+<li>Select the appropriate calendar event from the events list in edit mode</li>
+<li>Add the technician&rsquo;s account to the access list in &ldquo;Users&rdquo; tab</li>
+<li>Install <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> on the technician&rsquo;s smartphone</li>
+<li>Scan the <a href="https://bit.ly/390uh9p">NFC tag</a> with the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a>. <a href="https://www.google.com/forms/about/">Google Form</a> task list will be shown</li>
+</ol>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports"   target="_blank"  class="book-btn"><b>NFC progress report</b> on Google Play</a>
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3fnPvJjdutOGnDaRczMlKvt8R5lMo-JT2ycnCKCCo_NDD0cNlT8-Vt1JZKi2larl0amHSuTM_kZYkOQ1Bsha9CStfVuT8R66Nd4OcPovCBa4IrSYHvdG1Dq9hb_1zlmcI00D2GDmRam4WkKvyQ8ADs-8g=w1513-h845" alt="Business logic of NFC Progress Reports Android app"></p>
+]]></content>
+		</item>
+		
+		<item turbo="true">
+			<title>NFC task list, progress report and monitoring</title>
+			<link>https://house-intellect.github.io/posts/nfc_checklist/</link>
+			<pubDate>Thu, 19 Mar 2020 02:10:24 +0300</pubDate>
+			
+			<guid>https://house-intellect.github.io/posts/nfc_checklist/</guid>
+			<description>Progress reports are submitted by subordinates to the manager by scanning NFC tags! Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to show and submit progress reports to the manager, whereas the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
+			<turbo:content><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/xCiGhNuGPpaRAkij7"
+  data-title=""
+  data-description="Business logic of NFC Progress Reports Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/fZKiJ1BDckPufopfDV61xqoFmO9_qwcUIx9lBCjJDmrtvhZaQUuEPrzgkJsayMeQ-dhoImt3mXP6qvu3fxJTRC147P70s9OsXJOxTfulVnTX3f3y7XjrpkVbswF6KqdUChg7P_WYPlY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/RNAgPCYHVRISPgkHbgGjNXtB2ZPMFyc9QVNLk0TH4_9AvFQNwTCJ6l-FUEgZ3Eg0lUshAX88CsAaT558R5V5A1wU2pg-MKePoUOBP1-Sga1miKACf2tHjm-8KnepKfeo3fHU5zTGIX4=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/8YO2pBP7ANt6tMj1kwu2ZZnoMxOU00YYvMs3-DCToBuHJ3COzVHQURTQQjMjSvdgViyXNJTWRhjeuuRjhoAjkBCM7baelASTCy6tzR1SyfsDb_XIDWW4yY5Zh8E2R1Hq_wNGYU7mttY=w1030-h580"></object>
+   <object data="https://lh3.googleusercontent.com/MDK4PC28YwqRaEimeJU33f8kjaRbdGmVDfXaqmaReySDQ8dHk-MPq2HmEGrAj_lP3R8wT-C0q1nnq1gx4aVwj7qU-e4YRziDaDw-orHLj6ftnryAphbcfnnn5d9qozDBHBAUEd5aywU=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/B7tuD5xrXTlMvbNCk9m54DHMSMfkOn9V3r5qa_aUehkL5m6jemPJub22KX767vvMB0V1nCtWKA9jwiZYHFCGqHT36l3MbAcmQ7J9LR2KxnijgGUozBIvmtocd-yLLSYwWhKASXoZB2E=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/40OKEjCQGAqQPBVSjabL8IYTEoVDzAzpywtB-quO0W1KYcavi-iZN821Cxaftdt7fjMvvZPIx8_RMEUXdtcp1Ebe26ayZ1LNsaO02lnUcfasbnSZakFZE5dhuayPpqoA1rioIjWYC0M=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/0aEyx6auVQpVH048E16HpBRPnOjhpgaTyI1f7nKIq7vAwq9iWQrsbWRsRHxrNCqVYL0pIs5DrAxV1y3FacaflaDCmJq-61eRwLRJldYOnCgb7lfgKkUinxyCRvh0kFhVTzhBQZgKeck=w1030-h580"></object>
+</div>
+<div id="mobile" class="pa-carousel-widget"
+  data-link="https://photos.app.goo.gl/KHp98b9GgshMdcW68"
+  data-title=""
+  data-description="Business logic of NFC Progress Reports Android app"
+  data-background-color="#232427">
+  <object data="https://lh3.googleusercontent.com/nvZZdYJP-_x4Lro-etXbDKSq4YdxR4xBkBfavhyYpIQnD1TrEbHZcDS5TJsE9Yo9PKRJX9O5tUuFPiaUmKCPNI9zAKE1qAzCCJaFOHNQA6ymvfhQYlntQJgm8uPvQw5pwBiSG-e7Pao=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/527tDUYFGcyke3-UBVI8skIZmWvos6kR8_HbhcJKK7eH_3m4Unfzwltmlcoo79CuNBragfOq4d6O0nqQ6i5pobshLqPz_vNpfwNp13T56j8m7TssPEZjgxeeyRjlCtd0oDoRGVtSw2Q=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/HnyvVmbZFKnW_NTXI5SJ8WISS2rT-Rw4qSI8VQuUvGn1zNaKzud-lsYftU0UcTfliYNfHxkxkejnUpBMAAjDKqtjPRF22njFicUQdBNLqE0YqHXkF4VpE_mOpJy3Ew2miiQTnOsxq70=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/sRCacP61X17X9dkryAS084Mn1fvrzCsIUKYX1jwxqtIPDdm7flgCh5_MRdYEAVhq2BfRIft6pbxLVZUsy0Wgi2ZUreEuLpJnQyxfTsIcifjJYhmPbU3ZhyUDzNjQNX_kQgrZvnnTE1Y=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/-evY6HQdeJRzBA1z47oO07p7erReZtz37E3tCFAjVom4Vpe9W8LzSe4y9R2PHCXfW-wt6xv6zGqnGEWx05-sqcLML3k1sx-dl002CvZuyg2CwjV0zFdDpkQFZdO-8OxLdR8KZhaJXqY=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/2UDo7f7LKUnxdnMlBtp8L06fJj5t05WIT48g5ZD7qL2VxdQmnarDQ-OUCwTK8el72sLzm_Ki9aShZWEDTYDKc3tGmbmv4IVh5-ONIB7gv6VU86g1EXleQ6Vwgen03ZE6zao-L48wRqU=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/MSOka_SACjk6h5t16hDjiVhbUOcCadl29cNLjrAa5WAPKcq2VUVKrG8E8_-ZPPF89LlI8hNB7ATiOsfCZNH3MJc6ivoIi1lfnhRtYY8blTbtZLz2WlBSyST1H2MrnMr4hG_Ffpb1gjo=w893-h1700"></object>
+</div>
+<h3 id="progress-reports-are-submitted-by-subordinates-to-the-manager-by-scanning-nfc-tags">Progress reports are submitted by subordinates to the manager by scanning NFC tags!</h3>
+<p><em><strong>Equipment maintenance instructions</strong></em> are shown to technicians in charge upon scanning  <a href="https://bit.ly/390uh9p">NFC tags</a> attached to the respective equipment. This app is used to show and <em><strong>submit progress reports</strong></em> to the manager, whereas the association between <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs is established by using <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> which associates <a href="https://bit.ly/390uh9p">NFC tags</a> with corresponding task lists. Manager creates these events in <a href="https://calendar.google.com/calendar/r">Google Calendar</a> and places <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys URLs into event description fields. <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> creates a calendar to share with technicians who use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan the  <a href="https://bit.ly/390uh9p">NFC tags</a> and fill in the maintenance report forms. <a href="https://www.google.com/forms/about/">Google Form Surveys</a> based task lists contain <em><strong>maintenance instruction manuals and job descriptions</strong></em> relevant to the specific set of equipment marked by the <a href="https://bit.ly/390uh9p">NFC tag</a>. Associations between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs are automatically shared with technicians via Google accounts calendar sharing. Technicians use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan  <a href="https://bit.ly/390uh9p">NFC tags</a> and to fill out the <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys shown to them as a result of scanning. Survey results submitted by the service personnel through <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys can be stored arbitrarily in Google Spreadsheets in order to <em><strong>significantly increase the degree of supervisor&rsquo;s control</strong></em>. Automatic delivery of relevant maintenance manuals to technicians makes it possible to replace the most important workers with less expenses. <em><strong>Progress reports increase transparency of the business process</strong></em>. This solution can also be used to track inventory. <em><strong>Progress reports</strong></em> are kept in corporate <a href="https://www.google.com/forms/about/">Google Forms</a> or <a href="https://products.office.com/en-US/microsoft-teams/group-chat-software">Microsoft Teams</a> platforms.</p>
+<h3 id="to-link-an-nfc-taghttpsbitly390uh9p-to-a-google-form-surveyhttpswwwgooglecomformsabout-task-list">To link an <a href="https://bit.ly/390uh9p">NFC tag</a> to a <a href="https://www.google.com/forms/about/">Google Form Survey</a> task list</h3>
+<ol>
+<li>Create a <a href="https://www.google.com/forms/about/">Google Form</a> in your Google Docs</li>
+<li>Create a shortened URL for the created task list by pressing the &ldquo;send&rdquo; button</li>
+<li>Create a new event in your &ldquo;NFC&rdquo; <a href="https://calendar.google.com/calendar/r">Google Calendar</a>, this calendar is created by the app during first launch</li>
+<li>Paste your task list URL into the description field of the new calendar event</li>
+<li>Open the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> and scan a new <a href="https://bit.ly/390uh9p">NFC tag</a></li>
+<li>Select the appropriate calendar event from the events list in edit mode</li>
+<li>Add the technician&rsquo;s account to the access list in &ldquo;Users&rdquo; tab</li>
+<li>Install <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> on the technician&rsquo;s smartphone</li>
+<li>Scan the <a href="https://bit.ly/390uh9p">NFC tag</a> with the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a>. <a href="https://www.google.com/forms/about/">Google Form</a> task list will be shown</li>
+</ol>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports"   target="_blank"  class="book-btn"><b>NFC progress report</b> on Google Play</a>
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3fnPvJjdutOGnDaRczMlKvt8R5lMo-JT2ycnCKCCo_NDD0cNlT8-Vt1JZKi2larl0amHSuTM_kZYkOQ1Bsha9CStfVuT8R66Nd4OcPovCBa4IrSYHvdG1Dq9hb_1zlmcI00D2GDmRam4WkKvyQ8ADs-8g=w1513-h845" alt="Business logic of NFC Progress Reports Android app"></p>
+]]></turbo:content>
+			<content type="html"><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/xCiGhNuGPpaRAkij7"
+  data-title=""
+  data-description="Business logic of NFC Progress Reports Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/fZKiJ1BDckPufopfDV61xqoFmO9_qwcUIx9lBCjJDmrtvhZaQUuEPrzgkJsayMeQ-dhoImt3mXP6qvu3fxJTRC147P70s9OsXJOxTfulVnTX3f3y7XjrpkVbswF6KqdUChg7P_WYPlY=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/RNAgPCYHVRISPgkHbgGjNXtB2ZPMFyc9QVNLk0TH4_9AvFQNwTCJ6l-FUEgZ3Eg0lUshAX88CsAaT558R5V5A1wU2pg-MKePoUOBP1-Sga1miKACf2tHjm-8KnepKfeo3fHU5zTGIX4=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/8YO2pBP7ANt6tMj1kwu2ZZnoMxOU00YYvMs3-DCToBuHJ3COzVHQURTQQjMjSvdgViyXNJTWRhjeuuRjhoAjkBCM7baelASTCy6tzR1SyfsDb_XIDWW4yY5Zh8E2R1Hq_wNGYU7mttY=w1030-h580"></object>
+   <object data="https://lh3.googleusercontent.com/MDK4PC28YwqRaEimeJU33f8kjaRbdGmVDfXaqmaReySDQ8dHk-MPq2HmEGrAj_lP3R8wT-C0q1nnq1gx4aVwj7qU-e4YRziDaDw-orHLj6ftnryAphbcfnnn5d9qozDBHBAUEd5aywU=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/B7tuD5xrXTlMvbNCk9m54DHMSMfkOn9V3r5qa_aUehkL5m6jemPJub22KX767vvMB0V1nCtWKA9jwiZYHFCGqHT36l3MbAcmQ7J9LR2KxnijgGUozBIvmtocd-yLLSYwWhKASXoZB2E=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/40OKEjCQGAqQPBVSjabL8IYTEoVDzAzpywtB-quO0W1KYcavi-iZN821Cxaftdt7fjMvvZPIx8_RMEUXdtcp1Ebe26ayZ1LNsaO02lnUcfasbnSZakFZE5dhuayPpqoA1rioIjWYC0M=w1030-h580"></object>
+    <object data="https://lh3.googleusercontent.com/0aEyx6auVQpVH048E16HpBRPnOjhpgaTyI1f7nKIq7vAwq9iWQrsbWRsRHxrNCqVYL0pIs5DrAxV1y3FacaflaDCmJq-61eRwLRJldYOnCgb7lfgKkUinxyCRvh0kFhVTzhBQZgKeck=w1030-h580"></object>
+</div>
+<div id="mobile" class="pa-carousel-widget"
+  data-link="https://photos.app.goo.gl/KHp98b9GgshMdcW68"
+  data-title=""
+  data-description="Business logic of NFC Progress Reports Android app"
+  data-background-color="#232427">
+  <object data="https://lh3.googleusercontent.com/nvZZdYJP-_x4Lro-etXbDKSq4YdxR4xBkBfavhyYpIQnD1TrEbHZcDS5TJsE9Yo9PKRJX9O5tUuFPiaUmKCPNI9zAKE1qAzCCJaFOHNQA6ymvfhQYlntQJgm8uPvQw5pwBiSG-e7Pao=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/527tDUYFGcyke3-UBVI8skIZmWvos6kR8_HbhcJKK7eH_3m4Unfzwltmlcoo79CuNBragfOq4d6O0nqQ6i5pobshLqPz_vNpfwNp13T56j8m7TssPEZjgxeeyRjlCtd0oDoRGVtSw2Q=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/HnyvVmbZFKnW_NTXI5SJ8WISS2rT-Rw4qSI8VQuUvGn1zNaKzud-lsYftU0UcTfliYNfHxkxkejnUpBMAAjDKqtjPRF22njFicUQdBNLqE0YqHXkF4VpE_mOpJy3Ew2miiQTnOsxq70=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/sRCacP61X17X9dkryAS084Mn1fvrzCsIUKYX1jwxqtIPDdm7flgCh5_MRdYEAVhq2BfRIft6pbxLVZUsy0Wgi2ZUreEuLpJnQyxfTsIcifjJYhmPbU3ZhyUDzNjQNX_kQgrZvnnTE1Y=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/-evY6HQdeJRzBA1z47oO07p7erReZtz37E3tCFAjVom4Vpe9W8LzSe4y9R2PHCXfW-wt6xv6zGqnGEWx05-sqcLML3k1sx-dl002CvZuyg2CwjV0zFdDpkQFZdO-8OxLdR8KZhaJXqY=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/2UDo7f7LKUnxdnMlBtp8L06fJj5t05WIT48g5ZD7qL2VxdQmnarDQ-OUCwTK8el72sLzm_Ki9aShZWEDTYDKc3tGmbmv4IVh5-ONIB7gv6VU86g1EXleQ6Vwgen03ZE6zao-L48wRqU=w893-h1700"></object>
+  <object data="https://lh3.googleusercontent.com/MSOka_SACjk6h5t16hDjiVhbUOcCadl29cNLjrAa5WAPKcq2VUVKrG8E8_-ZPPF89LlI8hNB7ATiOsfCZNH3MJc6ivoIi1lfnhRtYY8blTbtZLz2WlBSyST1H2MrnMr4hG_Ffpb1gjo=w893-h1700"></object>
+</div>
+<h3 id="progress-reports-are-submitted-by-subordinates-to-the-manager-by-scanning-nfc-tags">Progress reports are submitted by subordinates to the manager by scanning NFC tags!</h3>
+<p><em><strong>Equipment maintenance instructions</strong></em> are shown to technicians in charge upon scanning  <a href="https://bit.ly/390uh9p">NFC tags</a> attached to the respective equipment. This app is used to show and <em><strong>submit progress reports</strong></em> to the manager, whereas the association between <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs is established by using <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> which associates <a href="https://bit.ly/390uh9p">NFC tags</a> with corresponding task lists. Manager creates these events in <a href="https://calendar.google.com/calendar/r">Google Calendar</a> and places <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys URLs into event description fields. <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> creates a calendar to share with technicians who use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan the  <a href="https://bit.ly/390uh9p">NFC tags</a> and fill in the maintenance report forms. <a href="https://www.google.com/forms/about/">Google Form Surveys</a> based task lists contain <em><strong>maintenance instruction manuals and job descriptions</strong></em> relevant to the specific set of equipment marked by the <a href="https://bit.ly/390uh9p">NFC tag</a>. Associations between  <a href="https://bit.ly/390uh9p">NFC tags</a> and <a href="https://www.google.com/forms/about/">Google Forms</a> URLs are automatically shared with technicians via Google accounts calendar sharing. Technicians use <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> to scan  <a href="https://bit.ly/390uh9p">NFC tags</a> and to fill out the <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys shown to them as a result of scanning. Survey results submitted by the service personnel through <a href="https://www.google.com/forms/about/">Google Forms</a> Surveys can be stored arbitrarily in Google Spreadsheets in order to <em><strong>significantly increase the degree of supervisor&rsquo;s control</strong></em>. Automatic delivery of relevant maintenance manuals to technicians makes it possible to replace the most important workers with less expenses. <em><strong>Progress reports increase transparency of the business process</strong></em>. This solution can also be used to track inventory. <em><strong>Progress reports</strong></em> are kept in corporate <a href="https://www.google.com/forms/about/">Google Forms</a> or <a href="https://products.office.com/en-US/microsoft-teams/group-chat-software">Microsoft Teams</a> platforms.</p>
+<h3 id="to-link-an-nfc-taghttpsbitly390uh9p-to-a-google-form-surveyhttpswwwgooglecomformsabout-task-list">To link an <a href="https://bit.ly/390uh9p">NFC tag</a> to a <a href="https://www.google.com/forms/about/">Google Form Survey</a> task list</h3>
+<ol>
+<li>Create a <a href="https://www.google.com/forms/about/">Google Form</a> in your Google Docs</li>
+<li>Create a shortened URL for the created task list by pressing the &ldquo;send&rdquo; button</li>
+<li>Create a new event in your &ldquo;NFC&rdquo; <a href="https://calendar.google.com/calendar/r">Google Calendar</a>, this calendar is created by the app during first launch</li>
+<li>Paste your task list URL into the description field of the new calendar event</li>
+<li>Open the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports">NFC tag linking app</a> and scan a new <a href="https://bit.ly/390uh9p">NFC tag</a></li>
+<li>Select the appropriate calendar event from the events list in edit mode</li>
+<li>Add the technician&rsquo;s account to the access list in &ldquo;Users&rdquo; tab</li>
+<li>Install <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a> on the technician&rsquo;s smartphone</li>
+<li>Scan the <a href="https://bit.ly/390uh9p">NFC tag</a> with the <a href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist">NFC task list app</a>. <a href="https://www.google.com/forms/about/">Google Form</a> task list will be shown</li>
+</ol>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfcchecklist"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports"   target="_blank"  class="book-btn"><b>NFC progress report</b> on Google Play</a>
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3fnPvJjdutOGnDaRczMlKvt8R5lMo-JT2ycnCKCCo_NDD0cNlT8-Vt1JZKi2larl0amHSuTM_kZYkOQ1Bsha9CStfVuT8R66Nd4OcPovCBa4IrSYHvdG1Dq9hb_1zlmcI00D2GDmRam4WkKvyQ8ADs-8g=w1513-h845" alt="Business logic of NFC Progress Reports Android app"></p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

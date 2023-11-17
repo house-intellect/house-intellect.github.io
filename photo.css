@@ -1,0 +1,23 @@
+@media(orientation: landscape) {
+        #laptop{
+            overflow: hidden;
+            width: 100%;
+            display: block !important;
+            height: 580px;
+        }
+        #mobile {
+            display: none !important;
+        }
+    }
+    @media screen and (orientation: portrait) {
+        #mobile {
+             overflow: hidden;
+             width: 100%;
+             display: block !important;
+             height: 750px;
+        }
+        #laptop {
+             display: none !important;
+        }
+    }
+
