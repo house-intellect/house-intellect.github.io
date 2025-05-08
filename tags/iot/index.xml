@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT on Productivity Tracking</title>
+    <link>https://house-intellect.github.io/tags/iot/</link>
+    <description>Recent content in IoT on Productivity Tracking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 19 Oct 2023 12:00:00 +0300</lastBuildDate>
+    <atom:link href="https://house-intellect.github.io/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IoT Battery Charger for Android</title>
+      <link>https://house-intellect.github.io/posts/iot_battery_charger/</link>
+      <pubDate>Thu, 19 Oct 2023 12:00:00 +0300</pubDate>
+      <guid>https://house-intellect.github.io/posts/iot_battery_charger/</guid>
+      <description>This app intelligently manages your phone&amp;rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).&#xA;Key Features:&#xA;Google Home Integration: Seamlessly connects to your Google Home ecosystem to control your smart switches. Customizable Charging Limits: Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</description>
+    </item>
+  </channel>
+</rss>

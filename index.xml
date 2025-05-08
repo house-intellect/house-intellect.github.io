@@ -7,42 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 19 Mar 2020 05:12:16 +0300</lastBuildDate><atom:link href="https://house-intellect.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Oct 2023 12:00:00 +0300</lastBuildDate>
+    <atom:link href="https://house-intellect.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IoT Battery Charger for Android</title>
+      <link>https://house-intellect.github.io/posts/iot_battery_charger/</link>
+      <pubDate>Thu, 19 Oct 2023 12:00:00 +0300</pubDate>
+      <guid>https://house-intellect.github.io/posts/iot_battery_charger/</guid>
+      <description>This app intelligently manages your phone&amp;rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).&#xA;Key Features:&#xA;Google Home Integration: Seamlessly connects to your Google Home ecosystem to control your smart switches. Customizable Charging Limits: Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</description>
+    </item>
     <item>
       <title>ЛИЦЕНЗИОННЫЙ ДОГОВОР-ОФЕРТА (Мобильное приложение “NFC контроль и надзор над выполнением работ”)</title>
       <link>https://house-intellect.github.io/offer/</link>
       <pubDate>Thu, 19 Nov 2020 12:10:24 +0300</pubDate>
-      
       <guid>https://house-intellect.github.io/offer/</guid>
       <description>Индивидуальный предприниматель Сыроватский Глеб Васильевич 1982 года рождения (паспорт серии 1104 №122853 выдан ОВД Ломоносовского округа г. Архангельска 6 ноября 2003 года), проживающий по адресу г. Архангельск ул. Попова 25-133 и зарегистрированный ИМНС РФ г. Архангельска 19 ноября 2001 г., ИНН 290121394088, свидетельство 29№001962330 ОГРН 311290110200096 от 12 апреля 2011 года, именуемый в дальнейшем «Лицензиар», публикует настоящий Лицензионный договор-оферту (далее – «Договор»), являющийся публичной офертой. В соответствии со статьей 438 Гражданского Кодекса Российской Федерации, безусловным принятием (акцептом) условий настоящего Договора считается оплата лицензионного вознаграждения Лицензиатом и получение Лицензиаром соответствующего финансового документа, подтверждающего факт оплаты.</description>
     </item>
-    
     <item>
       <title>Privacy Policy</title>
       <link>https://house-intellect.github.io/posts/privacy_policy/</link>
       <pubDate>Thu, 19 Mar 2020 05:12:16 +0300</pubDate>
-      
       <guid>https://house-intellect.github.io/posts/privacy_policy/</guid>
       <description>Your privacy is important to us. It is house-intellect&amp;rsquo;s policy to respect your privacy regarding any information our application requires to provide the desired service. We only ask for personal information when we truly need it to provide a service to you. We do not collect neither store any of your data. We don’t share any personally identifying information publicly or with third-parties. Our app may link to external sites that are not operated by us.</description>
     </item>
-    
     <item>
       <title>NFC progress report, instructions and monitoring</title>
       <link>https://house-intellect.github.io/posts/nfc_reports/</link>
       <pubDate>Thu, 19 Mar 2020 05:05:18 +0300</pubDate>
-      
       <guid>https://house-intellect.github.io/posts/nfc_reports/</guid>
       <description>Associates NFC tags attached to equipment with corresponding progress reports Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to establish associations of NFC tags to relevant Google Form Surveys links stored in description fields of calendar maintenance events: the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
     </item>
-    
     <item>
       <title>NFC task list, progress report and monitoring</title>
       <link>https://house-intellect.github.io/posts/nfc_checklist/</link>
       <pubDate>Thu, 19 Mar 2020 02:10:24 +0300</pubDate>
-      
       <guid>https://house-intellect.github.io/posts/nfc_checklist/</guid>
       <description>Progress reports are submitted by subordinates to the manager by scanning NFC tags! Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to show and submit progress reports to the manager, whereas the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
     </item>
-    
   </channel>
 </rss>

@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>check list on Productivity Tracking</title>
+    <title>Check List on Productivity Tracking</title>
     <link>https://house-intellect.github.io/tags/check-list/</link>
-    <description>Recent content in check list on Productivity Tracking</description>
+    <description>Recent content in Check List on Productivity Tracking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 19 Mar 2020 02:10:24 +0300</lastBuildDate><atom:link href="https://house-intellect.github.io/tags/check-list/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Mar 2020 02:10:24 +0300</lastBuildDate>
+    <atom:link href="https://house-intellect.github.io/tags/check-list/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NFC task list, progress report and monitoring</title>
       <link>https://house-intellect.github.io/posts/nfc_checklist/</link>
       <pubDate>Thu, 19 Mar 2020 02:10:24 +0300</pubDate>
-      
       <guid>https://house-intellect.github.io/posts/nfc_checklist/</guid>
       <description>Progress reports are submitted by subordinates to the manager by scanning NFC tags! Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to show and submit progress reports to the manager, whereas the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
     </item>
-    
   </channel>
 </rss>

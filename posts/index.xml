@@ -6,8 +6,81 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Thu, 19 Mar 2020 05:12:16 +0300</lastBuildDate>
+		<lastBuildDate>Thu, 19 Oct 2023 12:00:00 +0300</lastBuildDate>
 		<atom:link href="https://house-intellect.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item turbo="true">
+			<title>IoT Battery Charger for Android</title>
+			<link>https://house-intellect.github.io/posts/iot_battery_charger/</link>
+			<pubDate>Thu, 19 Oct 2023 12:00:00 +0300</pubDate>
+			
+			<guid>https://house-intellect.github.io/posts/iot_battery_charger/</guid>
+			<description>This app intelligently manages your phone&amp;rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).
+Key Features:
+Google Home Integration: Seamlessly connects to your Google Home ecosystem to control your smart switches. Customizable Charging Limits: Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</description>
+			<turbo:content><![CDATA[<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li><strong>Google Home Integration:</strong> Seamlessly connects to your Google Home ecosystem to control your smart switches.</li>
+<li><strong>Customizable Charging Limits:</strong> Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</li>
+<li><strong>Automatic Charging Control:</strong> The app monitors your phone&rsquo;s battery level and automatically turns your smart switch ON or OFF.</li>
+<li><strong>Battery Health Protection:</strong> Prevents your battery from staying at 100% for extended periods or dropping too low, which can help extend its overall lifespan.</li>
+<li><strong>Peace of Mind:</strong> Charge your phone overnight without anxiety.</li>
+<li><strong>Ideal for Always-On Devices:</strong> Perfect for phones used as dedicated Wi-Fi hotspots, security cameras, or information displays that are constantly plugged in.</li>
+<li><strong>Current Charge Level Display:</strong> See your phone&rsquo;s battery percentage directly in the app.</li>
+<li><strong>Auto Maintain Charge Toggle:</strong> Easily enable or disable the automatic charging management.</li>
+<li><strong>Dark &amp; Light Theme:</strong> Choose the theme that suits your preference.</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<ol>
+<li>Ensure your phone charger is plugged into a Google Home compatible smart switch.</li>
+<li>Open IoT Battery Charger and grant necessary permissions.</li>
+<li>Select your smart switch from the list of available Google Home devices.</li>
+<li>Set your preferred Lower Limit (e.g., 20%) and Upper Limit (e.g., 80%) for charging.</li>
+<li>Toggle &ldquo;Auto Maintain Charge&rdquo; ON.<br>
+The app will now monitor your battery. When it drops below the Lower Limit, the switch will turn ON. When it reaches the Upper Limit, the switch will turn OFF.</li>
+</ol>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>An Android phone.</li>
+<li>Google Home app installed and set up.</li>
+<li>A Google Home compatible smart switch (e.g., smart plug).</li>
+<li>Active internet connection for Google Home communication.</li>
+</ul>
+<p>Download IoT Battery Charger today and take control of your phone&rsquo;s charging for better battery longevity!</p>
+]]></turbo:content>
+			<content type="html"><![CDATA[<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li><strong>Google Home Integration:</strong> Seamlessly connects to your Google Home ecosystem to control your smart switches.</li>
+<li><strong>Customizable Charging Limits:</strong> Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</li>
+<li><strong>Automatic Charging Control:</strong> The app monitors your phone&rsquo;s battery level and automatically turns your smart switch ON or OFF.</li>
+<li><strong>Battery Health Protection:</strong> Prevents your battery from staying at 100% for extended periods or dropping too low, which can help extend its overall lifespan.</li>
+<li><strong>Peace of Mind:</strong> Charge your phone overnight without anxiety.</li>
+<li><strong>Ideal for Always-On Devices:</strong> Perfect for phones used as dedicated Wi-Fi hotspots, security cameras, or information displays that are constantly plugged in.</li>
+<li><strong>Current Charge Level Display:</strong> See your phone&rsquo;s battery percentage directly in the app.</li>
+<li><strong>Auto Maintain Charge Toggle:</strong> Easily enable or disable the automatic charging management.</li>
+<li><strong>Dark &amp; Light Theme:</strong> Choose the theme that suits your preference.</li>
+</ul>
+<p><strong>How It Works:</strong></p>
+<ol>
+<li>Ensure your phone charger is plugged into a Google Home compatible smart switch.</li>
+<li>Open IoT Battery Charger and grant necessary permissions.</li>
+<li>Select your smart switch from the list of available Google Home devices.</li>
+<li>Set your preferred Lower Limit (e.g., 20%) and Upper Limit (e.g., 80%) for charging.</li>
+<li>Toggle &ldquo;Auto Maintain Charge&rdquo; ON.<br>
+The app will now monitor your battery. When it drops below the Lower Limit, the switch will turn ON. When it reaches the Upper Limit, the switch will turn OFF.</li>
+</ol>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>An Android phone.</li>
+<li>Google Home app installed and set up.</li>
+<li>A Google Home compatible smart switch (e.g., smart plug).</li>
+<li>Active internet connection for Google Home communication.</li>
+</ul>
+<p>Download IoT Battery Charger today and take control of your phone&rsquo;s charging for better battery longevity!</p>
+]]></content>
+		</item>
 		
 		<item turbo="true">
 			<title>Privacy Policy</title>
