@@ -15,10 +15,20 @@
 			<pubDate>Thu, 19 Oct 2023 12:00:00 +0300</pubDate>
 			
 			<guid>https://house-intellect.github.io/posts/iot_battery_charger/</guid>
-			<description>This app intelligently manages your phone&amp;rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).
+			<description>NFC task list on Google Play This app intelligently manages your phone&amp;rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).
 Key Features:
 Google Home Integration: Seamlessly connects to your Google Home ecosystem to control your smart switches. Customizable Charging Limits: Set specific lower and upper battery percentage thresholds (hysteresis) to start and stop charging.</description>
-			<turbo:content><![CDATA[<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
+			<turbo:content><![CDATA[<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.smarthome_battery_health"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+<img src="https://photos.fife.usercontent.google.com/pw/AP1GczOeBkz6iQ4EwDwaiywmLdUH3dsSYE66Dga9RN7fxoHdUuRa1cJ4QvU63Q=w1024-h500-s-no-gm?authuser=0" alt="Business logic of IoT Battery Charger Android app"></p>
+<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
 <p><strong>Key Features:</strong></p>
 <ul>
 <li><strong>Google Home Integration:</strong> Seamlessly connects to your Google Home ecosystem to control your smart switches.</li>
@@ -49,7 +59,17 @@ The app will now monitor your battery. When it drops below the Lower Limit, the 
 </ul>
 <p>Download IoT Battery Charger today and take control of your phone&rsquo;s charging for better battery longevity!</p>
 ]]></turbo:content>
-			<content type="html"><![CDATA[<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
+			<content type="html"><![CDATA[<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.smarthome_battery_health"   target="_blank"  class="book-btn"><b>NFC task list</b> on Google Play</a>
+
+<img src="https://photos.fife.usercontent.google.com/pw/AP1GczOeBkz6iQ4EwDwaiywmLdUH3dsSYE66Dga9RN7fxoHdUuRa1cJ4QvU63Q=w1024-h500-s-no-gm?authuser=0" alt="Business logic of IoT Battery Charger Android app"></p>
+<p>This app intelligently manages your phone&rsquo;s charging cycle using your existing Google Home compatible smart switch. Simply connect your phone charger to a smart switch, select the switch within the app, and set your desired charging window (e.g., start charging at 20%, stop at 80%).</p>
 <p><strong>Key Features:</strong></p>
 <ul>
 <li><strong>Google Home Integration:</strong> Seamlessly connects to your Google Home ecosystem to control your smart switches.</li>
