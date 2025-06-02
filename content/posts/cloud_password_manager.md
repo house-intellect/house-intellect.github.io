@@ -17,23 +17,24 @@ tags: [password manager, cloud storage, Dropbox, data encryption, master passwor
     <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w893-h1700-s-no-gm?authuser=0"></object>
 </div>
 
-### Simple Cloud Password Manager
-This **simple password manager** stores your data in your Dropbox **cloud storage**.  
-**IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!**  
-All fields are visible on your screen and can be found easily by a quick text filter!  
+### 🌟 Simple Cloud Password Manager 🌟  
+This **simple password manager** stores your data in your Dropbox **cloud storage**. ☁️🔒  
+**IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!** 🚫📱  
 
-To enable **automatic data backups**, please **sign into Dropbox** on app startup.  
-**Database restore** feature will be available only if a mismatch between **local and backed up databases** is detected.
+All fields are visible on your screen 📋 and can be found easily by a quick text filter! 🔍  
 
-A **master password** is a password invented by yourself for the **protection of your data**.  
-It can be any sequence of letters, digits, or numbers at your choice.  
-Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database.
+To enable **automatic data backups**, please **sign into Dropbox** on app startup. 🔄☁️  
+**Database restore** feature will be available only if a mismatch between **local and backed up databases** is detected. 🛠️📂  
 
-All you need to remember is the master password of your choice, which must be entered at startup.  
-Your master password is used to encrypt the **password database** and to **restrict unauthorized access** to your **personal data**.  
-It is not stored anywhere and is only used for **encryption and decryption** purposes.  
-If the **database was previously encrypted** with one master password, it will not be successfully decrypted with another one.  
-Please, do not forget your master password!
+A **master password** is a password invented by yourself for the **protection of your data**. 🔑🛡️  
+It can be any sequence of letters, digits, or numbers at your choice. ✍️🔢  
+Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database. ❗💾  
 
-<br/>{{< button href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"  >}}<b>Simple Cloud Password Manager</b> on Google Play{{< /button >}}
+All you need to remember is the master password of your choice, which must be entered at startup. 🧠🔑  
+Your master password is used to encrypt the **password database** and to **restrict unauthorized access** to your **personal data**. 🔒👤  
+It is not stored anywhere and is only used for **encryption and decryption** purposes. 🔐🔄  
+If the **database was previously encrypted** with one master password, it will not be successfully decrypted with another one. 🚫🔑  
+Please, do not forget your master password! ⚠️🧠  
+
+<br/>{{< button href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"  >}}📲 <b>Simple Cloud Password Manager</b> on Google Play{{< /button >}}
 
