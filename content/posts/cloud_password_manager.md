@@ -1,13 +1,13 @@
 ---
 title: "Simple Cloud Password Manager"
-date: 2023-10-01T10:00:00+03:00
+date: 2012-10-01T10:00:00+03:00
 draft: false
 tags: [password manager, cloud storage, Dropbox, data encryption, master password, automatic backups, database restore, personal data protection]
 ---
 
 <script src="/photo.js" async></script> 
-<div id="carousel" class="pa-carousel-widget" 
-  data-link="https://photos.app.goo.gl/exampleCarouselLink"
+<div id="carousel" style="height: 800px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
   data-title=""
   data-description="Business logic of Simple Cloud Password Manager Android app"
   data-background-color="#232427">
