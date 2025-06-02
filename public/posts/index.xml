@@ -104,89 +104,6 @@ Key Features Google Home Integration: Seamlessly connects with your Google Home 
 		</item>
 		
 		<item turbo="true">
-			<title>Simple Cloud Password Manager</title>
-			<link>https://house-intellect.github.io/posts/cloud_password_manager/</link>
-			<pubDate>Sun, 01 Oct 2023 10:00:00 +0300</pubDate>
-			
-			<guid>https://house-intellect.github.io/posts/cloud_password_manager/</guid>
-			<description>Simple Cloud Password Manager This simple password manager stores your data in your Dropbox cloud storage.
-IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!
-All fields are visible on your screen and can be found easily by a quick text filter!
-To enable automatic data backups, please sign into Dropbox on app startup.
-Database restore feature will be available only if a mismatch between local and backed up databases is detected.</description>
-			<turbo:content><![CDATA[<script src="/photo.js" async></script> 
-<div id="carousel" class="pa-carousel-widget" 
-  data-link="https://photos.app.goo.gl/exampleCarouselLink"
-  data-title=""
-  data-description="Business logic of Simple Cloud Password Manager Android app"
-  data-background-color="#232427">
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w1018-h1936-s-no-gm?authuser=0"></object>
-</div>
-<h3 id="simple-cloud-password-manager">Simple Cloud Password Manager</h3>
-<p>This <strong>simple password manager</strong> stores your data in your Dropbox <strong>cloud storage</strong>.<br>
-<strong>IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!</strong><br>
-All fields are visible on your screen and can be found easily by a quick text filter!</p>
-<p>To enable <strong>automatic data backups</strong>, please <strong>sign into Dropbox</strong> on app startup.<br>
-<strong>Database restore</strong> feature will be available only if a mismatch between <strong>local and backed up databases</strong> is detected.</p>
-<p>A <strong>master password</strong> is a password invented by yourself for the <strong>protection of your data</strong>.<br>
-It can be any sequence of letters, digits, or numbers at your choice.<br>
-Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database.</p>
-<p>All you need to remember is the master password of your choice, which must be entered at startup.<br>
-Your master password is used to encrypt the <strong>password database</strong> and to <strong>restrict unauthorized access</strong> to your <strong>personal data</strong>.<br>
-It is not stored anywhere and is only used for <strong>encryption and decryption</strong> purposes.<br>
-If the <strong>database was previously encrypted</strong> with one master password, it will not be successfully decrypted with another one.<br>
-Please, do not forget your master password!</p>
-<p><br/>
-
-
-
-
-
-
-<a  href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"   target="_blank"  class="book-btn"><b>Simple Cloud Password Manager</b> on Google Play</a>
-</p>
-]]></turbo:content>
-			<content type="html"><![CDATA[<script src="/photo.js" async></script> 
-<div id="carousel" class="pa-carousel-widget" 
-  data-link="https://photos.app.goo.gl/exampleCarouselLink"
-  data-title=""
-  data-description="Business logic of Simple Cloud Password Manager Android app"
-  data-background-color="#232427">
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w1018-h1936-s-no-gm?authuser=0"></object>
-</div>
-<h3 id="simple-cloud-password-manager">Simple Cloud Password Manager</h3>
-<p>This <strong>simple password manager</strong> stores your data in your Dropbox <strong>cloud storage</strong>.<br>
-<strong>IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!</strong><br>
-All fields are visible on your screen and can be found easily by a quick text filter!</p>
-<p>To enable <strong>automatic data backups</strong>, please <strong>sign into Dropbox</strong> on app startup.<br>
-<strong>Database restore</strong> feature will be available only if a mismatch between <strong>local and backed up databases</strong> is detected.</p>
-<p>A <strong>master password</strong> is a password invented by yourself for the <strong>protection of your data</strong>.<br>
-It can be any sequence of letters, digits, or numbers at your choice.<br>
-Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database.</p>
-<p>All you need to remember is the master password of your choice, which must be entered at startup.<br>
-Your master password is used to encrypt the <strong>password database</strong> and to <strong>restrict unauthorized access</strong> to your <strong>personal data</strong>.<br>
-It is not stored anywhere and is only used for <strong>encryption and decryption</strong> purposes.<br>
-If the <strong>database was previously encrypted</strong> with one master password, it will not be successfully decrypted with another one.<br>
-Please, do not forget your master password!</p>
-<p><br/>
-
-
-
-
-
-
-<a  href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"   target="_blank"  class="book-btn"><b>Simple Cloud Password Manager</b> on Google Play</a>
-</p>
-]]></content>
-		</item>
-		
-		<item turbo="true">
 			<title>Privacy Policy</title>
 			<link>https://house-intellect.github.io/posts/privacy_policy/</link>
 			<pubDate>Thu, 19 Mar 2020 05:12:16 +0300</pubDate>
@@ -480,6 +397,109 @@ and personal information. This policy is effective as of 13 February 2020.</p>
 <a  href="https://play.google.com/store/apps/details?id=house_intellect.nfc_reports"   target="_blank"  class="book-btn"><b>NFC progress report</b> on Google Play</a>
 
 <img src="https://lh3.googleusercontent.com/pw/ACtC-3fnPvJjdutOGnDaRczMlKvt8R5lMo-JT2ycnCKCCo_NDD0cNlT8-Vt1JZKi2larl0amHSuTM_kZYkOQ1Bsha9CStfVuT8R66Nd4OcPovCBa4IrSYHvdG1Dq9hb_1zlmcI00D2GDmRam4WkKvyQ8ADs-8g=w1513-h845" alt="Business logic of NFC Progress Reports Android app"></p>
+]]></content>
+		</item>
+		
+		<item turbo="true">
+			<title>Simple Cloud Password Manager</title>
+			<link>https://house-intellect.github.io/posts/cloud_password_manager/</link>
+			<pubDate>Mon, 01 Oct 2012 10:00:00 +0300</pubDate>
+			
+			<guid>https://house-intellect.github.io/posts/cloud_password_manager/</guid>
+			<description>This simple password manager stores your data in your Dropbox cloud storage. ☁️🔒
+IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK! 🚫📱
+All fields are visible on your screen 📋 and can be found easily by a quick text filter! 🔍
+To enable automatic data backups, please sign into Dropbox on app startup. 🔄☁️
+Database restore feature will be available only if a mismatch between local and backed up databases is detected.</description>
+			<turbo:content><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" style="height: 600px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
+  data-title=""
+  data-description="Business logic of Simple Cloud Password Manager Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMaApWCZbCS3qKcFqHG8gpBUfvMgdhKq1q0p8v0WlK_8h7FhfSG9QB465EPyM8Q6Le0lYWoUoLI4Rr6Z9cXHV3kYDZxZyDtrs_rfsZ2dKJ9HyuDI8LAklrTBcM59uHnfbqLSNkkEjjKhvjGdJiQWAWQ4A=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMki8Aa-UkG3M3Qcz05u3yg9Nbp5i9z9EupAG3cZgqNrslDLx0y6YwJU9TqgWV9WnmKZd541GZohfDAnGyL-PgdKL2mYCoAXqPVxcFBzKUGoS2g9dEaagm_KQQLwKnZB0mVtbkyhvgRh6FdDQB6YWYoLQ=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMixlZMr8SibsSTzyRSweCodijSRIvikFiXIq1h0kV8sn67hziXN74UDK2_8SsTU8ViAPyl9vLRxSu5F6MKpMc5LRVAyU_cMKedKBX_xFTn34ZFXF95LOuzfTgtnDyYsfgx7OutXQM9nVKjUr5-6e6NcA=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczO8zVCmKqS6y2G_r2vo7xlAhuNQfujaP3aXb8hccsX763GEX-5A9WnfnDJCSc0REOKov4QETJyxDGrG1bHyXMHzBAGCQKV20OauQvHVL2lBI2JFkRKzdNqNoqzA_rVo7Z_V3BhHkAqF7pgvkcWbka4SLw=w1400-h900-s-no-gm?authuser=0"></object>
+</div>
+<script src="/photo.js" async></script> 
+<div id="mobile" style="height: 600px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
+  data-title=""
+  data-description="Business logic of Simple Cloud Password Manager Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w893-h1700-s-no-gm?authuser=0"></object>
+</div>
+<p>This <strong>simple password manager</strong> stores your data in your Dropbox <strong>cloud storage</strong>. ☁️🔒<br>
+<strong>IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!</strong> 🚫📱</p>
+<p>All fields are visible on your screen 📋 and can be found easily by a quick text filter! 🔍</p>
+<p>To enable <strong>automatic data backups</strong>, please <strong>sign into Dropbox</strong> on app startup. 🔄☁️<br>
+<strong>Database restore</strong> feature will be available only if a mismatch between <strong>local and backed up databases</strong> is detected. 🛠️📂</p>
+<p>A <strong>master password</strong> is a password invented by yourself for the <strong>protection of your data</strong>. 🔑🛡️<br>
+It can be any sequence of letters, digits, or numbers at your choice. ✍️🔢<br>
+Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database. ❗💾</p>
+<p>All you need to remember is the master password of your choice, which must be entered at startup. 🧠🔑<br>
+Your master password is used to encrypt the <strong>password database</strong> and to <strong>restrict unauthorized access</strong> to your <strong>personal data</strong>. 🔒👤<br>
+It is not stored anywhere and is only used for <strong>encryption and decryption</strong> purposes. 🔐🔄<br>
+If the <strong>database was previously encrypted</strong> with one master password, it will not be successfully decrypted with another one. 🚫🔑<br>
+Please, do not forget your master password! ⚠️🧠</p>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"   target="_blank"  class="book-btn">📲 <b>Simple Cloud Password Manager</b> on Google Play</a>
+</p>
+]]></turbo:content>
+			<content type="html"><![CDATA[<script src="/photo.js" async></script> 
+<div id="laptop" style="height: 600px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
+  data-title=""
+  data-description="Business logic of Simple Cloud Password Manager Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMaApWCZbCS3qKcFqHG8gpBUfvMgdhKq1q0p8v0WlK_8h7FhfSG9QB465EPyM8Q6Le0lYWoUoLI4Rr6Z9cXHV3kYDZxZyDtrs_rfsZ2dKJ9HyuDI8LAklrTBcM59uHnfbqLSNkkEjjKhvjGdJiQWAWQ4A=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMki8Aa-UkG3M3Qcz05u3yg9Nbp5i9z9EupAG3cZgqNrslDLx0y6YwJU9TqgWV9WnmKZd541GZohfDAnGyL-PgdKL2mYCoAXqPVxcFBzKUGoS2g9dEaagm_KQQLwKnZB0mVtbkyhvgRh6FdDQB6YWYoLQ=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMixlZMr8SibsSTzyRSweCodijSRIvikFiXIq1h0kV8sn67hziXN74UDK2_8SsTU8ViAPyl9vLRxSu5F6MKpMc5LRVAyU_cMKedKBX_xFTn34ZFXF95LOuzfTgtnDyYsfgx7OutXQM9nVKjUr5-6e6NcA=w1400-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczO8zVCmKqS6y2G_r2vo7xlAhuNQfujaP3aXb8hccsX763GEX-5A9WnfnDJCSc0REOKov4QETJyxDGrG1bHyXMHzBAGCQKV20OauQvHVL2lBI2JFkRKzdNqNoqzA_rVo7Z_V3BhHkAqF7pgvkcWbka4SLw=w1400-h900-s-no-gm?authuser=0"></object>
+</div>
+<script src="/photo.js" async></script> 
+<div id="mobile" style="height: 600px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
+  data-title=""
+  data-description="Business logic of Simple Cloud Password Manager Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w893-h1700-s-no-gm?authuser=0"></object>
+</div>
+<p>This <strong>simple password manager</strong> stores your data in your Dropbox <strong>cloud storage</strong>. ☁️🔒<br>
+<strong>IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!</strong> 🚫📱</p>
+<p>All fields are visible on your screen 📋 and can be found easily by a quick text filter! 🔍</p>
+<p>To enable <strong>automatic data backups</strong>, please <strong>sign into Dropbox</strong> on app startup. 🔄☁️<br>
+<strong>Database restore</strong> feature will be available only if a mismatch between <strong>local and backed up databases</strong> is detected. 🛠️📂</p>
+<p>A <strong>master password</strong> is a password invented by yourself for the <strong>protection of your data</strong>. 🔑🛡️<br>
+It can be any sequence of letters, digits, or numbers at your choice. ✍️🔢<br>
+Please, do not forget your master password to avoid the loss of your data due to inability to decrypt the database. ❗💾</p>
+<p>All you need to remember is the master password of your choice, which must be entered at startup. 🧠🔑<br>
+Your master password is used to encrypt the <strong>password database</strong> and to <strong>restrict unauthorized access</strong> to your <strong>personal data</strong>. 🔒👤<br>
+It is not stored anywhere and is only used for <strong>encryption and decryption</strong> purposes. 🔐🔄<br>
+If the <strong>database was previously encrypted</strong> with one master password, it will not be successfully decrypted with another one. 🚫🔑<br>
+Please, do not forget your master password! ⚠️🧠</p>
+<p><br/>
+
+
+
+
+
+
+<a  href="https://play.google.com/store/apps/details?id=house_intellect.keyring_free"   target="_blank"  class="book-btn">📲 <b>Simple Cloud Password Manager</b> on Google Play</a>
+</p>
 ]]></content>
 		</item>
 		

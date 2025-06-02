@@ -17,13 +17,6 @@
       <description>IoT Battery Charger on Google Play Overview IoT Battery Charger for Android intelligently manages your phone&amp;rsquo;s charging cycle through integration with Google Home compatible smart switches. This advanced app optimizes your charging process by ensuring your device charges within a designated battery percentage window, protecting battery health and enhancing charging efficiency.&#xA;Key Features Google Home Integration: Seamlessly connects with your Google Home ecosystem to control smart switches, offering a smart, integrated charging experience.</description>
     </item>
     <item>
-      <title>Simple Cloud Password Manager</title>
-      <link>https://house-intellect.github.io/posts/cloud_password_manager/</link>
-      <pubDate>Sun, 01 Oct 2023 10:00:00 +0300</pubDate>
-      <guid>https://house-intellect.github.io/posts/cloud_password_manager/</guid>
-      <description>Simple Cloud Password Manager This simple password manager stores your data in your Dropbox cloud storage.&#xA;IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!&#xA;All fields are visible on your screen and can be found easily by a quick text filter!&#xA;To enable automatic data backups, please sign into Dropbox on app startup.&#xA;Database restore feature will be available only if a mismatch between local and backed up databases is detected.</description>
-    </item>
-    <item>
       <title>ЛИЦЕНЗИОННЫЙ ДОГОВОР-ОФЕРТА (Мобильное приложение “NFC контроль и надзор над выполнением работ”)</title>
       <link>https://house-intellect.github.io/offer/</link>
       <pubDate>Thu, 19 Nov 2020 12:10:24 +0300</pubDate>
@@ -50,6 +43,13 @@
       <pubDate>Thu, 19 Mar 2020 02:10:24 +0300</pubDate>
       <guid>https://house-intellect.github.io/posts/nfc_checklist/</guid>
       <description>Progress reports are submitted by subordinates to the manager by scanning NFC tags! Equipment maintenance instructions are shown to technicians in charge upon scanning NFC tags attached to the respective equipment. This app is used to show and submit progress reports to the manager, whereas the association between NFC tags and Google Forms URLs is established by using NFC tag linking app which associates NFC tags with corresponding task lists.</description>
+    </item>
+    <item>
+      <title>Simple Cloud Password Manager</title>
+      <link>https://house-intellect.github.io/posts/cloud_password_manager/</link>
+      <pubDate>Mon, 01 Oct 2012 10:00:00 +0300</pubDate>
+      <guid>https://house-intellect.github.io/posts/cloud_password_manager/</guid>
+      <description>This simple password manager stores your data in your Dropbox cloud storage. ☁️🔒&#xA;IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK! 🚫📱&#xA;All fields are visible on your screen 📋 and can be found easily by a quick text filter! 🔍&#xA;To enable automatic data backups, please sign into Dropbox on app startup. 🔄☁️&#xA;Database restore feature will be available only if a mismatch between local and backed up databases is detected.</description>
     </item>
   </channel>
 </rss>
