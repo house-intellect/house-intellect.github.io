@@ -6,7 +6,18 @@ tags: [password manager, cloud storage, Dropbox, data encryption, master passwor
 ---
 
 <script src="/photo.js" async></script> 
-<div id="carousel" style="height: 600px; width:100%" class="pa-carousel-widget" 
+<div id="laptop" style="height: 600px; width:100%" class="pa-carousel-widget" 
+  data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
+  data-title=""
+  data-description="Business logic of Simple Cloud Password Manager Android app"
+  data-background-color="#232427">
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMaApWCZbCS3qKcFqHG8gpBUfvMgdhKq1q0p8v0WlK_8h7FhfSG9QB465EPyM8Q6Le0lYWoUoLI4Rr6Z9cXHV3kYDZxZyDtrs_rfsZ2dKJ9HyuDI8LAklrTBcM59uHnfbqLSNkkEjjKhvjGdJiQWAWQ4A=w1200-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMki8Aa-UkG3M3Qcz05u3yg9Nbp5i9z9EupAG3cZgqNrslDLx0y6YwJU9TqgWV9WnmKZd541GZohfDAnGyL-PgdKL2mYCoAXqPVxcFBzKUGoS2g9dEaagm_KQQLwKnZB0mVtbkyhvgRh6FdDQB6YWYoLQ=w1200-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczMixlZMr8SibsSTzyRSweCodijSRIvikFiXIq1h0kV8sn67hziXN74UDK2_8SsTU8ViAPyl9vLRxSu5F6MKpMc5LRVAyU_cMKedKBX_xFTn34ZFXF95LOuzfTgtnDyYsfgx7OutXQM9nVKjUr5-6e6NcA=w1200-h900-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczO8zVCmKqS6y2G_r2vo7xlAhuNQfujaP3aXb8hccsX763GEX-5A9WnfnDJCSc0REOKov4QETJyxDGrG1bHyXMHzBAGCQKV20OauQvHVL2lBI2JFkRKzdNqNoqzA_rVo7Z_V3BhHkAqF7pgvkcWbka4SLw=w1200-h900-s-no-gm?authuser=0"></object>
+</div>
+<script src="/photo.js" async></script> 
+<div id="mobile" style="height: 600px; width:100%" class="pa-carousel-widget" 
   data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
   data-title=""
   data-description="Business logic of Simple Cloud Password Manager Android app"
