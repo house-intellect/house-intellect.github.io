@@ -6,15 +6,15 @@ tags: [password manager, cloud storage, Dropbox, data encryption, master passwor
 ---
 
 <script src="/photo.js" async></script> 
-<div id="carousel" style="height: 800px; width:100%" class="pa-carousel-widget" 
+<div id="carousel" style="height: 600px; width:100%" class="pa-carousel-widget" 
   data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
   data-title=""
   data-description="Business logic of Simple Cloud Password Manager Android app"
   data-background-color="#232427">
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w1018-h1936-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w1018-h1936-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczOkxTPsbqyMHsWUbGXB9_FEUKLOWzuWSJdFlWFl6a7ZAcoVbNC3nrvbyqomY942obHMykdeqPFU_SUnLBelSrUnpxMEMNHcjMJrCChuWHqv3npMrNnLhNFCwpcfcUnxDWIISBo5h8j4ZD6PRHGdoa5Dng=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPJR6H7s193RQdpaUK95rRPbF3J5IHCOzFkpYN3ZrzFHDnEkLxarwRMuNDnMhz2VeAUk_8bB8Qf-nvyXW8eifLXG6qlLJeae7mFitRqKzBx-J4ismxkyJb0U6EGSz9C78mjckCI4Vw4FpTYCOZMbDJzhg=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPqvyhNxWbe7rHKlt_By2P7FGY2272ijYJzzDM4cElNuBaznAHD-IG45fwDVVTr0FInIIgZElQPlVYpWEXUiE0uoCYV_oQiowizAkWGRFJuZiH6xld1If6RgQcmN7y8RqoPMc7TQPVICRcYuyN_w4JlZQ=w893-h1700-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w893-h1700-s-no-gm?authuser=0"></object>
 </div>
 
 ### Simple Cloud Password Manager
