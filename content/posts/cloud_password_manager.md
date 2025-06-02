@@ -17,7 +17,6 @@ tags: [password manager, cloud storage, Dropbox, data encryption, master passwor
     <object data="https://lh3.googleusercontent.com/pw/AP1GczPk-ZxEda_cX6Tx7W1HG2at0zDAH9aL520nSI8Fz_MvtAkz63_T4CROd7YMJze0ekus5Y5FLeG4SvnEVvvqzuVj-y8grmaPweAoBSiASoMkPXiF5moGpoPeD-xkHW1qkn4cmR7w8SRHGgfcfzhhlpbfAQ=w893-h1700-s-no-gm?authuser=0"></object>
 </div>
 
-### 🌟 Simple Cloud Password Manager 🌟  
 This **simple password manager** stores your data in your Dropbox **cloud storage**. ☁️🔒  
 **IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!** 🚫📱  
 
