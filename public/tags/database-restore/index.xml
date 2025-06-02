@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Database Restore on Productivity Tracking</title>
+    <link>https://house-intellect.github.io/tags/database-restore/</link>
+    <description>Recent content in Database Restore on Productivity Tracking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 01 Oct 2023 10:00:00 +0300</lastBuildDate>
+    <atom:link href="https://house-intellect.github.io/tags/database-restore/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple Cloud Password Manager</title>
+      <link>https://house-intellect.github.io/posts/cloud_password_manager/</link>
+      <pubDate>Sun, 01 Oct 2023 10:00:00 +0300</pubDate>
+      <guid>https://house-intellect.github.io/posts/cloud_password_manager/</guid>
+      <description>Simple Cloud Password Manager This simple password manager stores your data in your Dropbox cloud storage.&#xA;IT DOES NOT HACK FACEBOOK, WHATSAPP, INSTAGRAM OR ANY OTHER SOCIAL NETWORK!&#xA;All fields are visible on your screen and can be found easily by a quick text filter!&#xA;To enable automatic data backups, please sign into Dropbox on app startup.&#xA;Database restore feature will be available only if a mismatch between local and backed up databases is detected.</description>
+    </item>
+  </channel>
+</rss>
