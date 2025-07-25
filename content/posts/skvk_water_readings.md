@@ -8,7 +8,6 @@ tags: [водоканал, показания счетчиков, вода, ли
 <script src="/photo.js" async></script> 
 <div id="carousel" style="height: 600px; width:100%" class="pa-carousel-widget" 
   data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
-  data-title="Ставрополь Край Водоканал: отправка показаний"
   data-description="Передача показаний счетчиков воды через мобильное приложение"
   data-background-color="#232427">
     <object data="https://lh3.googleusercontent.com/pw/AP1GczNOmmS9haEAFyyLP7iFMlgV4CoXqZbO6_O9z_7vD88CHmTufepV3z7mjNVv0YHx9ThH0mkAIw647-CPF-X8fVF_fkdkvVtd_ERLs_0ojqJXO-e9P-4VWJzFAMuxIZXdEawkDwMP4Vj066I8SbG-RruRsg=w720-h1280-s-no-gm?authuser=0"></object>
