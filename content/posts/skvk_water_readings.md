@@ -10,9 +10,8 @@ tags: [водоканал, показания счетчиков, вода, ли
   data-link="https://photos.app.goo.gl/aPG7MyiDnP7Hbffy6"
   data-description="Передача показаний счетчиков воды через мобильное приложение"
   data-background-color="#232427">
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczNOmmS9haEAFyyLP7iFMlgV4CoXqZbO6_O9z_7vD88CHmTufepV3z7mjNVv0YHx9ThH0mkAIw647-CPF-X8fVF_fkdkvVtd_ERLs_0ojqJXO-e9P-4VWJzFAMuxIZXdEawkDwMP4Vj066I8SbG-RruRsg=w720-h1280-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczMCAXuiy47ff61s2LUvev8-3b2wq7khKZSTxI1qTGge9d8xOD1sa1qaUItQ0cyEUI9WAB5r-nr7aahaKw0I9SZT5zLyoxydH1RhGOMq09aAH0uyRGFwOegiGeLCDctUjNISwxGuVBv7BcHGH63hWBh_hA=w720-h1280-s-no-gm?authuser=0"></object>
-    <object data="https://lh3.googleusercontent.com/pw/AP1GczOpyQTKQkgx1aKbsBLsgsSViNUg-ZUUh5lVh5LZqs6KZ8E_IqqR4X6knGRAEOlnI5tWBQSaosPdyVMMoL8bWbvrial3bRiegscuIXtCOcpeHCciu0_jyp8kDtjIr35h43yMLGTkhVTJzrFKBGZG1rGycA=w720-h1280-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczPgKS4TgXeVqXTjLWXsAsjPBQ8uvkuRUVnossOQNbeJkms_Ttbt7-HBWT3hmhod4V7r5kFi1-cHj28cyFlU7Xu8Z9RU0pUPP0yi5iMy2KHo88JlFjCMD0e-quViz0BdE2Tza0MBmrqnNjCJxk0W4kwpbw=w1901-h907-s-no-gm?authuser=0"></object>
+    <object data="https://lh3.googleusercontent.com/pw/AP1GczOYI642NfV8C6sJFD7cnbkXblNcY4s2N2Br8Kk-9zTVjQ8V_FCHiqWokC041z9l7At4lPRKeKXINcixcjEDY7bCjN7zXrEJbRMHs6ovLdpEzAOZ_YDlfdvpqJgNyw64_S2yur7RFlzn6Zh4cC8mnaNZiQ=w1901-h907-s-no-gm?authuser=0"></object>
 </div>
 
 ### 💧 Ставрополь Край Водоканал: отправка показаний вовремя
