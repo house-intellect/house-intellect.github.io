@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.alexaphonecharger",
+    "sha256_cert_fingerprints":
+    ["4B:EA:F3:7B:55:A1:34:B6:EB:14:FB:B8:D6:25:C9:37:2B:1C:6B:CB:30:B6:5A:35:FD:54:91:DE:1A:7E:F2:A5"]
+  }
+}]
