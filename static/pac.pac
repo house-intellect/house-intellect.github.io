@@ -9,11 +9,8 @@ function FindProxyForURL(url, host) {
     const domainIs = function (host, domain) {
         return host === domain || dnsDomainIs(host, '.' + domain);
     };
-
-    // 1. Проверка на локальные хосты и IP-диапазоны
     const directCondition = (() => {
         if (isPlainHostName(host)) return true;
-        // Внимание: isInNetEx может быть недоступна в старых реализациях PAC.
         if (typeof isInNetEx !== 'undefined') {
             if (isInNetEx(host, 'fc00::/7') || isInNetEx(host, 'fe80::/10')) {
                 return true;
@@ -24,15 +21,10 @@ function FindProxyForURL(url, host) {
         }
         return ipRanges.some(([start, end]) => isInNet(host, start, end));
     })();
-
     if (directCondition) return 'DIRECT';
-
-    // 2. Список исключений (домены, которые всегда идут DIRECT)
     if (["corp","dns","eth","home","ip","intra","intranet","local","onion","tenet","discordapp.io","edit.boxlocalhost.com","localhost.megasyncloopback.mega.nz","localhost.wwbizsrv.alibaba.com","localtest.me","lvh.me","spotilocal.com","vcap.me","www.amazonmusiclocal.com","google-analytics.com","secure.gate2shop.com","cdn.safecharge.com","data-e5.brmtr.org","gist.githubusercontent.com","paddle.com","payment.kassa.ai","yoomoney.ru","data-e5.brmtr.org","servefaststatic.work","staticvaultcdn.org","staticvaultcdn.xyz","cdnflare.org","cdnaccelerate.com","cdnzone.net","cdnflow.net","datafrenzy.org","swiftcdn.org","streamlineddata.pro","contentnode.net","d3qw4xzzzxpncq.cloudfront.net","a703.l461.r761.fastcloudcdn.net","files.staticstream.org"].some(item => domainIs(host, item))) {
         return 'DIRECT';
     }
-
-    // 3. Фильтрация по доменам
     const siteFilter = siteFilters.find(filter => {
         switch (filter.format) {
             case 'domain': 
@@ -45,13 +37,8 @@ function FindProxyForURL(url, host) {
                 return false;
         }
     });
-
     if (!siteFilter) {
-        // Если домен не соответствует ни одному фильтру
-        // globalReturn установлен в null, поэтому вернется 'DIRECT'
         return globalReturn ? countries[globalReturn] : 'DIRECT';
     }
-
-    // Если домен соответствует фильтру, используем прокси для указанной страны
     return siteFilter.country ? countries[siteFilter.country] : 'DIRECT';
 }
