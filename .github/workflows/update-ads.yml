@@ -1,0 +1,59 @@
+name: Update app-ads.txt
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  update-ads:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and Merge
+        run: |
+          mkdir -p static
+          TEMP_DIR="temp_ads"
+          mkdir -p $TEMP_DIR
+          
+          OUTPUT="static/app-ads.txt"
+          APPODEAL="static/app_ads_txt.txt"
+          YANDEX="static/app-ads ya ru.txt"
+          CAS_URL="https://cas.ai/app-ads.txt"
+
+          echo "Fetching CAS..."
+          curl -s -L "$CAS_URL" > "$TEMP_DIR/cas.txt"
+          
+          # Validation: Fail silently if it's HTML
+          if grep -q "<!doctype html>" "$TEMP_DIR/cas.txt"; then echo "" > "$TEMP_DIR/cas.txt"; fi
+
+          # Merge
+          echo "# Consolidated app-ads.txt" > "$OUTPUT"
+          [ -f "$APPODEAL" ] && cat "$APPODEAL" >> "$OUTPUT"
+          [ -f "$YANDEX" ] && cat "$YANDEX" >> "$OUTPUT"
+          cat "$TEMP_DIR/cas.txt" >> "$OUTPUT"
+
+          # Sort Unique (Important to remove duplicates between providers)
+          # Normalize spaces around commas to ensure true uniqueness
+          grep -v "^#" "$OUTPUT" | grep -v "^$" | sed 's/, /,/g' | sort -u > "$TEMP_DIR/final.txt"
+          echo "# Consolidated app-ads.txt - Updated $(date)" > "$OUTPUT"
+          cat "$TEMP_DIR/final.txt" >> "$OUTPUT"
+          
+          rm -rf "$TEMP_DIR"
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/app-ads.txt
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Auto-update app-ads.txt [skip ci]"
+            git push
+          fi
