@@ -32,17 +32,11 @@ jobs:
           # Validation: Fail silently if it's HTML
           if grep -q "<!doctype html>" "$TEMP_DIR/cas.txt"; then echo "" > "$TEMP_DIR/cas.txt"; fi
 
-          # Merge
-          echo "# Consolidated app-ads.txt" > "$OUTPUT"
+          # Merge - CAS first, then local sources
+          echo "# Consolidated app-ads.txt - Updated $(date)" > "$OUTPUT"
+          cat "$TEMP_DIR/cas.txt" >> "$OUTPUT"
           [ -f "$APPODEAL" ] && cat "$APPODEAL" >> "$OUTPUT"
           [ -f "$YANDEX" ] && cat "$YANDEX" >> "$OUTPUT"
-          cat "$TEMP_DIR/cas.txt" >> "$OUTPUT"
-
-          # Sort Unique (Important to remove duplicates between providers)
-          # Normalize spaces around commas to ensure true uniqueness
-          grep -v "^#" "$OUTPUT" | grep -v "^$" | sed 's/, /,/g' | sort -u > "$TEMP_DIR/final.txt"
-          echo "# Consolidated app-ads.txt - Updated $(date)" > "$OUTPUT"
-          cat "$TEMP_DIR/final.txt" >> "$OUTPUT"
           
           rm -rf "$TEMP_DIR"
 
