@@ -1,5 +1,4 @@
-# Consolidated app-ads.txt - Generated on Пн 01 июн 2026 14:35:19 MSK
-# CAS Source (Fetched Пн 01 июн 2026 14:35:19 MSK)
+# Consolidated app-ads.txt - Updated Tue Jun  2 02:50:15 UTC 2026
 # CAS.ai Updated May 29, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
@@ -5037,10 +5036,7 @@ yieldmo.com, 3377199372461613093, RESELLER
 yieldmo.com, 3746143199094055132, RESELLER
 yieldmo.com, 2719019867620450718, RESELLER
 zetaglobal.net, 546, RESELLER
-zetaglobal.net, 891, RESELLER
-
-# Appodeal Source
-#Updated 31.03.2026
+zetaglobal.net, 891, RESELLER#Updated 31.03.2026
 
 #Appodeal
 
@@ -10070,10 +10066,7 @@ trustedstack.com, TS677PGY3, RESELLER
 
 adyoulike.com, 721f20f70910d379981dc19ec5da709f, RESELLER
 
-axonix.com, 59204, RESELLER
-
-# Yandex Source
-e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
+axonix.com, 59204, RESELLERe-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 yandex.com, 96602871, DIRECT
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
 rubiconproject.com, 27842, RESELLER, 0bfd66d529a55807
