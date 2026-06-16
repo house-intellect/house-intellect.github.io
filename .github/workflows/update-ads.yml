@@ -48,6 +48,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto-update app-ads.txt [skip ci]"
+            git commit -m "Auto-update app-ads.txt"
             git push
           fi
