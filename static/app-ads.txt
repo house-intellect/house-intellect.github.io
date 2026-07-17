@@ -1,4 +1,4 @@
-# Consolidated app-ads.txt - Updated Thu Jul 16 01:53:36 UTC 2026
+# Consolidated app-ads.txt - Updated Fri Jul 17 01:57:47 UTC 2026
 # CAS.ai Updated Jul 13, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
