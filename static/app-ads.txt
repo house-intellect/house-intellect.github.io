@@ -1,4 +1,4 @@
-# Consolidated app-ads.txt - Updated Fri Jul 17 01:57:47 UTC 2026
+# Consolidated app-ads.txt - Updated Sat Jul 18 01:47:17 UTC 2026
 # CAS.ai Updated Jul 13, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
@@ -4789,25 +4789,43 @@ zetaglobal.net, 998, RESELLER
 zmaticoo.com, 5135128, RESELLER
 zmaticoo.com, 5135765, RESELLER
 zmaticoo.com, 5135785, RESELLER
-#=== Monetrix May 13, 2026
+#=== Monetrix Jul 17, 2026
 inventorypartnerdomain=monetrix.ai
+acexchange.co.kr, 1024274798, RESELLER
+adiiix.com, 45a0b607, RESELLER
 adnimation.com, 20250107, RESELLER
+adnimation.com, 20260054, RESELLER
+amxrtb.com, 105199499, RESELLER
+amxrtb.com, 105200008, RESELLER
+apkpure.com, pub1020, RESELLER
+aralego.com, par-E2B82A784DB779B7172D8DEB9B489647, RESELLER
+betweendigital.com, 45036, RESELLER
 betweendigital.com, 47386, RESELLER
 bidinfluence.com, 700171, RESELLER
 bidscube.com, 300002, RESELLER, 6ecc87a1e0269657
 carliba.io, 766182, RESELLER
+consumable.com, 2001650, RESELLER
 conversantmedia.com, 101211, RESELLER, 03113cd04947736d
 escalax.com, 168, RESELLER
+loopme.com, 15127, RESELLER, 6c8d5f95897a5a3b
+media.net, 8CU92DEBR, RESELLER
 media.net, 8CUF63MX7, RESELLER
 metup.it, AJxF6R664a9M6CaTvK, RESELLER
+mobupps.com, c74d97b01eae257e44aa9d5bade97baf33228, RESELLER
 motorik.io, 1001178, RESELLER
 omgstudios.com, 301220251, RESELLER
+openx.com, 566954904, RESELLER, 6a698e2ec38604c6
+opera.com, pub13378607116160, RESELLER, 55a0c5fd61378de3
 opera.com, pub8845742850816, RESELLER, 55a0c5fd61378de3
 pubmatic.com, 167844, RESELLER, 5d62403b186f2ace
 sabio.us, 100156, RESELLER, 96ed93aaa9795702
+sharethrough.com, c7082970, RESELLER, d53b998a7bd4ecd2
 smilewanted.com, 6061, RESELLER
+smilewanted.com, 6194, RESELLER
 ssp.e-volution.ai, AJxF6R664a9M6CaTvK, RESELLER
+tagoras.io, 4039c2f2bf89441206dfd4fbc7961c4a, RESELLER
 toponad.com, 165e994051461c, RESELLER, 1d49fe424a1a456d
+ucfunnel.com, par-E2B82A784DB779B7172D8DEB9B489647, RESELLER
 #=== DisplayIO Jun 12, 2026
 display.io, 2529, DIRECT
 adswizz.com, 571, RESELLER
