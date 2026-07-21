@@ -17,9 +17,16 @@ CAS_URL="https://cas.ai/app-ads.txt"
 # Create temp directory
 mkdir -p "$TEMP_DIR"
 
-# Function to clean content (remove empty lines and trim)
-clean_content() {
-    sed '/^[[:space:]]*$/d' "$1" | sed 's/[[:space:]]*$//'
+# Function to clean and deduplicate content
+deduplicate_content() {
+    local input_file="$1"
+    local output_file="$2"
+    
+    # Process: remove blank lines, trim whitespace, sort, and remove duplicates
+    sed '/^[[:space:]]*$/d' "$input_file" | \
+    sed 's/[[:space:]]*$//' | \
+    sort | \
+    uniq > "$output_file"
 }
 
 echo "Fetching Clever Ads Solutions (CAS)..."
@@ -36,39 +43,62 @@ if [ -s "$TEMP_DIR/cas.txt" ] && (grep -qi "<!doctype\|<html\|<body" "$TEMP_DIR/
     echo "" > "$TEMP_DIR/cas.txt"
 fi
 
-# Start building the consolidated file
-echo "# Consolidated app-ads.txt - Generated on $(date)" > "$OUTPUT_FILE"
-echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> "$OUTPUT_FILE"
-echo "" >> "$OUTPUT_FILE"
+# Combine all sources into a temporary file
+echo "Merging and deduplicating sources..."
 
-# Add CAS entries
-if [ -s "$TEMP_DIR/cas.txt" ]; then
-    echo "# ========== CAS Source ==========" >> "$OUTPUT_FILE"
-    clean_content "$TEMP_DIR/cas.txt" >> "$OUTPUT_FILE"
-    echo "" >> "$OUTPUT_FILE"
-fi
+{
+    echo "# Consolidated app-ads.txt - Generated on $(date)"
+    echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+    echo ""
+    
+    # Add CAS entries
+    if [ -s "$TEMP_DIR/cas.txt" ]; then
+        echo "# ========== CAS Source =========="
+        cat "$TEMP_DIR/cas.txt"
+        echo ""
+    fi
+    
+    # Add Appodeal entries
+    if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
+        echo "# ========== Appodeal Source =========="
+        cat "$APPODEAL_LOCAL"
+        echo ""
+    fi
+    
+    # Add Yandex entries
+    if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
+        echo "# ========== Yandex Source =========="
+        cat "$YANDEX_LOCAL"
+        echo ""
+    fi
+} > "$TEMP_DIR/combined.txt"
 
-# Add Appodeal entries
-if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
-    echo "# ========== Appodeal Source ==========" >> "$OUTPUT_FILE"
-    clean_content "$APPODEAL_LOCAL" >> "$OUTPUT_FILE"
-    echo "" >> "$OUTPUT_FILE"
-fi
+# Separate comments and entries, then deduplicate
+{
+    # Keep header comments
+    grep "^#" "$TEMP_DIR/combined.txt" | head -5
+    echo ""
+    
+    # Get all non-comment, non-empty lines, deduplicate, and sort
+    grep -v "^#" "$TEMP_DIR/combined.txt" | \
+    grep -v "^[[:space:]]*$" | \
+    sed 's/[[:space:]]*$//' | \
+    sort | \
+    uniq
+} > "$OUTPUT_FILE"
 
-# Add Yandex entries
-if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
-    echo "# ========== Yandex Source ==========" >> "$OUTPUT_FILE"
-    clean_content "$YANDEX_LOCAL" >> "$OUTPUT_FILE"
-    echo "" >> "$OUTPUT_FILE"
-fi
-
-# Final cleanup - remove trailing blank lines
-sed -i -e :a -e '/^\s*$/d;N;ba' "$OUTPUT_FILE" || true
+# Add summary stats as comments at the end
+{
+    echo ""
+    echo "# ========== Statistics =========="
+    echo "# Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+    echo "# Total entries: $(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)"
+} >> "$OUTPUT_FILE"
 
 # Cleanup temp files
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "✓ Done! Merged file created at $OUTPUT_FILE"
-echo "  Total lines: $(wc -l < "$OUTPUT_FILE")"
+echo "✓ Done! Deduplicated file created at $OUTPUT_FILE"
+echo "  Total entries: $(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)"
 echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
