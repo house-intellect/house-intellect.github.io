@@ -2,8 +2,8 @@ name: Update app-ads.txt
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Every day at midnight
-  workflow_dispatch: # Manual trigger
+    - cron: '0 0 * * *'  # Every day at midnight UTC
+  workflow_dispatch:     # Manual trigger
 
 jobs:
   update-ads:
@@ -11,34 +11,34 @@ jobs:
     permissions:
       contents: write
       actions: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch and Merge
+      - name: Run merge script
         run: |
-          mkdir -p static
-          TEMP_DIR="temp_ads"
-          mkdir -p $TEMP_DIR
-          
-          OUTPUT="static/app-ads.txt"
-          APPODEAL="static/app_ads_txt.txt"
-          YANDEX="static/app-ads ya ru.txt"
-          CAS_URL="https://cas.ai/app-ads.txt"
+          chmod +x merge-ads.sh
+          ./merge-ads.sh
 
-          echo "Fetching CAS..."
-          curl -s -L "$CAS_URL" > "$TEMP_DIR/cas.txt"
+      - name: Verify output file
+        run: |
+          if [ ! -f "static/app-ads.txt" ]; then
+            echo "❌ Error: app-ads.txt was not created"
+            exit 1
+          fi
           
-          # Validation: Fail silently if it's HTML
-          if grep -q "<!doctype html>" "$TEMP_DIR/cas.txt"; then echo "" > "$TEMP_DIR/cas.txt"; fi
-
-          # Merge - CAS first, then local sources
-          echo "# Consolidated app-ads.txt - Updated $(date)" > "$OUTPUT"
-          cat "$TEMP_DIR/cas.txt" >> "$OUTPUT"
-          [ -f "$APPODEAL" ] && cat "$APPODEAL" >> "$OUTPUT"
-          [ -f "$YANDEX" ] && cat "$YANDEX" >> "$OUTPUT"
+          if [ ! -s "static/app-ads.txt" ]; then
+            echo "❌ Error: app-ads.txt is empty"
+            exit 1
+          fi
           
-          rm -rf "$TEMP_DIR"
+          echo "✓ app-ads.txt created successfully"
+          echo "  Lines: $(wc -l < static/app-ads.txt)"
+          echo "  Size: $(du -h static/app-ads.txt | cut -f1)"
+          echo ""
+          echo "Preview (first 20 lines):"
+          head -20 static/app-ads.txt
 
       - name: Commit and Push
         id: commit
@@ -46,24 +46,44 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add static/app-ads.txt
+          
           if git diff --staged --quiet; then
-            echo "No changes detected"
+            echo "ℹ No changes detected in app-ads.txt"
             echo "changes_made=false" >> $GITHUB_OUTPUT
           else
-            git commit -m "Auto-update app-ads.txt"
-            git push
-            echo "changes_made=true" >> $GITHUB_OUTPUT
+            git commit -m "chore: auto-update app-ads.txt"
+            if git push; then
+              echo "✓ Successfully pushed changes"
+              echo "changes_made=true" >> $GITHUB_OUTPUT
+            else
+              echo "⚠ Push failed, may be no network changes"
+              echo "changes_made=false" >> $GITHUB_OUTPUT
+            fi
           fi
 
-      - name: Trigger Hugo Build
+      - name: Trigger Hugo Build (if changed)
         if: steps.commit.outputs.changes_made == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.rest.actions.createWorkflowDispatch({
+            console.log('Triggering Hugo build...');
+            await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'hugo.yml',
               ref: 'main'
-            })
+            });
+            console.log('✓ Hugo build triggered');
+
+      - name: Workflow Summary
+        if: always()
+        run: |
+          echo "## 📋 App-Ads Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Timestamp**: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: ✓ Completed" >> $GITHUB_STEP_SUMMARY
+          if [ -f "static/app-ads.txt" ]; then
+            echo "- **Lines**: $(wc -l < static/app-ads.txt)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Size**: $(du -h static/app-ads.txt | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          fi
