@@ -17,27 +17,6 @@ CAS_URL="https://cas.ai/app-ads.txt"
 # Create temp directory
 mkdir -p "$TEMP_DIR"
 
-# Function to normalize entries: trim, remove spaces around commas, normalize case
-normalize_entry() {
-    # Remove leading/trailing whitespace
-    local entry=$(echo "$1" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-    
-    # Skip comments and empty lines
-    if [[ "$entry" =~ ^# ]] || [ -z "$entry" ]; then
-        echo "$entry"
-        return
-    fi
-    
-    # Skip non-standard entries (like OwnerDomain=)
-    if [[ "$entry" =~ ^[a-zA-Z]+= ]]; then
-        echo "# $entry"
-        return
-    fi
-    
-    # Normalize spacing: remove spaces around commas and normalize to lowercase domain
-    echo "$entry" | sed 's/[[:space:]]*,[[:space:]]*/,/g' | sed 's/^[a-zA-Z0-9.-]*\./\L&/' 
-}
-
 echo "Fetching Clever Ads Solutions (CAS)..."
 if curl -s -L --max-time 30 --retry 3 "$CAS_URL" > "$TEMP_DIR/cas.txt"; then
     echo "✓ CAS fetched successfully"
@@ -52,52 +31,92 @@ if [ -s "$TEMP_DIR/cas.txt" ] && (grep -qi "<!doctype\|<html\|<body" "$TEMP_DIR/
     echo "" > "$TEMP_DIR/cas.txt"
 fi
 
-# Combine all sources into a temporary file
-echo "Merging and deduplicating sources..."
+# Function to ensure file ends with newline
+ensure_newline() {
+    local file="$1"
+    if [ -s "$file" ] && [ "$(tail -c 1 "$file" | wc -l)" -eq 0 ]; then
+        echo "" >> "$file"
+    fi
+}
 
+# Ensure all source files end with newline before combining
+ensure_newline "$TEMP_DIR/cas.txt"
+if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
+    ensure_newline "$APPODEAL_LOCAL"
+fi
+if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
+    ensure_newline "$YANDEX_LOCAL"
+fi
+
+# Function to validate and fix lines
+validate_and_fix_line() {
+    local line="$1"
+    
+    # Skip empty lines and comments
+    if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ || "$line" =~ ^# ]]; then
+        echo "$line"
+        return
+    fi
+    
+    # Remove leading/trailing whitespace
+    line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+    
+    # Skip non-standard entries
+    if [[ "$line" =~ ^[a-zA-Z]+= ]]; then
+        return
+    fi
+    
+    # Normalize: remove spaces around commas
+    line=$(echo "$line" | sed 's/[[:space:]]*,[[:space:]]*/,/g')
+    
+    # Check for valid format: domain,id,type[,cert] (3-4 comma-separated fields)
+    if [[ "$line" =~ ^[a-zA-Z0-9._-]+,[^,]+,(DIRECT|RESELLER)(,[a-zA-Z0-9]+)?$ ]]; then
+        # Convert domain to lowercase for normalization
+        local domain=$(echo "$line" | cut -d',' -f1 | tr '[:upper:]' '[:lower:]')
+        local rest=$(echo "$line" | cut -d',' -f2-)
+        echo "$domain,$rest"
+    else
+        # Invalid line - skip
+        return
+    fi
+}
+
+# Combine all sources with explicit newlines
+echo "Merging sources..."
 {
-    # Add CAS entries
     if [ -s "$TEMP_DIR/cas.txt" ]; then
         cat "$TEMP_DIR/cas.txt"
+        echo ""  # Explicit newline separator
     fi
     
-    # Add Appodeal entries
     if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
         cat "$APPODEAL_LOCAL"
+        echo ""  # Explicit newline separator
     fi
     
-    # Add Yandex entries
     if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
         cat "$YANDEX_LOCAL"
+        echo ""  # Explicit newline separator
     fi
 } > "$TEMP_DIR/combined.txt"
 
-# Process: normalize, separate comments from entries, deduplicate
+# Process: validate, normalize, deduplicate
+echo "Validating and deduplicating..."
 {
     echo "# Consolidated app-ads.txt"
     echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
     echo "# Generated from: CAS, Appodeal, Yandex"
     echo ""
     
-    # Extract and normalize all entries
+    # Process each line
     while IFS= read -r line; do
-        if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]]; then
-            continue  # Skip empty lines
-        fi
-        normalize_entry "$line"
-    done < "$TEMP_DIR/combined.txt" > "$TEMP_DIR/normalized.txt"
-    
-    # Separate comments from entries
-    grep "^#" "$TEMP_DIR/normalized.txt" || true
-    echo ""
-    
-    # Get all non-comment, non-empty lines, deduplicate, and sort
-    grep -v "^#" "$TEMP_DIR/normalized.txt" | \
-    grep -v "^[[:space:]]*$" | \
-    sort -u
+        validate_and_fix_line "$line"
+    done < "$TEMP_DIR/combined.txt" | \
+    # Remove empty lines and duplicates, then sort
+    grep -v "^[[:space:]]*$" | sort -u
 } > "$OUTPUT_FILE"
 
-# Add summary stats as comments at the end
+# Add summary stats and ensure proper ending
 {
     echo ""
     echo "# ========== Statistics =========="
@@ -106,10 +125,13 @@ echo "Merging and deduplicating sources..."
     echo "# Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 } >> "$OUTPUT_FILE"
 
+# Ensure file ends with newline
+ensure_newline "$OUTPUT_FILE"
+
 # Cleanup temp files
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "✓ Done! Deduplicated and normalized file created at $OUTPUT_FILE"
-echo "  Total unique entries: $ENTRY_COUNT"
+echo "✓ Done! Validated and deduplicated file created"
+echo "  Total unique valid entries: $ENTRY_COUNT"
 echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
