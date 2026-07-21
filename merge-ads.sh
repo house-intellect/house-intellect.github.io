@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e  # Exit on error
+
 # Configuration
 STATIC_DIR="static"
 OUTPUT_FILE="$STATIC_DIR/app-ads.txt"
@@ -12,33 +14,61 @@ YANDEX_LOCAL="$STATIC_DIR/app-ads ya ru.txt"
 # Public Remote Source
 CAS_URL="https://cas.ai/app-ads.txt"
 
+# Create temp directory
 mkdir -p "$TEMP_DIR"
 
-echo "Fetching Clever Ads Solutions (CAS)..."
-curl -s -L "$CAS_URL" > "$TEMP_DIR/cas.txt"
+# Function to clean content (remove empty lines and trim)
+clean_content() {
+    sed '/^[[:space:]]*$/d' "$1" | sed 's/[[:space:]]*$//'
+}
 
-# Validation: Ensure the CAS file is actually plain text and not HTML
-if grep -q "<!doctype html>" "$TEMP_DIR/cas.txt" || grep -q "<html>" "$TEMP_DIR/cas.txt"; then
-    echo "Error: CAS download returned HTML instead of plain text. Using empty fallback."
+echo "Fetching Clever Ads Solutions (CAS)..."
+if curl -s -L --max-time 30 --retry 3 "$CAS_URL" > "$TEMP_DIR/cas.txt"; then
+    echo "✓ CAS fetched successfully"
+else
+    echo "⚠ Failed to fetch CAS, using empty fallback"
     echo "" > "$TEMP_DIR/cas.txt"
 fi
 
-# Merge Logic - CAS first, then local sources
+# Validation: Ensure the CAS file is actual content and not HTML error page
+if [ -s "$TEMP_DIR/cas.txt" ] && (grep -qi "<!doctype\|<html\|<body" "$TEMP_DIR/cas.txt" || [ "$(wc -c < "$TEMP_DIR/cas.txt")" -lt 10 ]); then
+    echo "⚠ CAS returned HTML or invalid content. Using empty fallback."
+    echo "" > "$TEMP_DIR/cas.txt"
+fi
+
+# Start building the consolidated file
 echo "# Consolidated app-ads.txt - Generated on $(date)" > "$OUTPUT_FILE"
+echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
 
-# Add the fetched CAS entries first
-echo "# CAS Source (Fetched $(date))" >> "$OUTPUT_FILE"
-cat "$TEMP_DIR/cas.txt" >> "$OUTPUT_FILE"
-echo -e "\n" >> "$OUTPUT_FILE"
+# Add CAS entries
+if [ -s "$TEMP_DIR/cas.txt" ]; then
+    echo "# ========== CAS Source ==========" >> "$OUTPUT_FILE"
+    clean_content "$TEMP_DIR/cas.txt" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+fi
 
-# Combine local sources if they exist
-[ -f "$APPODEAL_LOCAL" ] && echo "# Appodeal Source" >> "$OUTPUT_FILE" && cat "$APPODEAL_LOCAL" >> "$OUTPUT_FILE"
-echo -e "\n" >> "$OUTPUT_FILE"
+# Add Appodeal entries
+if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
+    echo "# ========== Appodeal Source ==========" >> "$OUTPUT_FILE"
+    clean_content "$APPODEAL_LOCAL" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+fi
 
-[ -f "$YANDEX_LOCAL" ] && echo "# Yandex Source" >> "$OUTPUT_FILE" && cat "$YANDEX_LOCAL" >> "$OUTPUT_FILE"
+# Add Yandex entries
+if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
+    echo "# ========== Yandex Source ==========" >> "$OUTPUT_FILE"
+    clean_content "$YANDEX_LOCAL" >> "$OUTPUT_FILE"
+    echo "" >> "$OUTPUT_FILE"
+fi
 
-# Cleanup
+# Final cleanup - remove trailing blank lines
+sed -i -e :a -e '/^\s*$/d;N;ba' "$OUTPUT_FILE" || true
+
+# Cleanup temp files
 rm -rf "$TEMP_DIR"
 
-echo "Done! Merged file created at $OUTPUT_FILE"
-wc -l "$OUTPUT_FILE"
+echo ""
+echo "✓ Done! Merged file created at $OUTPUT_FILE"
+echo "  Total lines: $(wc -l < "$OUTPUT_FILE")"
+echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
