@@ -17,16 +17,25 @@ CAS_URL="https://cas.ai/app-ads.txt"
 # Create temp directory
 mkdir -p "$TEMP_DIR"
 
-# Function to clean and deduplicate content
-deduplicate_content() {
-    local input_file="$1"
-    local output_file="$2"
+# Function to normalize entries: trim, remove spaces around commas, normalize case
+normalize_entry() {
+    # Remove leading/trailing whitespace
+    local entry=$(echo "$1" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
     
-    # Process: remove blank lines, trim whitespace, sort, and remove duplicates
-    sed '/^[[:space:]]*$/d' "$input_file" | \
-    sed 's/[[:space:]]*$//' | \
-    sort | \
-    uniq > "$output_file"
+    # Skip comments and empty lines
+    if [[ "$entry" =~ ^# ]] || [ -z "$entry" ]; then
+        echo "$entry"
+        return
+    fi
+    
+    # Skip non-standard entries (like OwnerDomain=)
+    if [[ "$entry" =~ ^[a-zA-Z]+= ]]; then
+        echo "# $entry"
+        return
+    fi
+    
+    # Normalize spacing: remove spaces around commas and normalize to lowercase domain
+    echo "$entry" | sed 's/[[:space:]]*,[[:space:]]*/,/g' | sed 's/^[a-zA-Z0-9.-]*\./\L&/' 
 }
 
 echo "Fetching Clever Ads Solutions (CAS)..."
@@ -47,58 +56,60 @@ fi
 echo "Merging and deduplicating sources..."
 
 {
-    echo "# Consolidated app-ads.txt - Generated on $(date)"
-    echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-    echo ""
-    
     # Add CAS entries
     if [ -s "$TEMP_DIR/cas.txt" ]; then
-        echo "# ========== CAS Source =========="
         cat "$TEMP_DIR/cas.txt"
-        echo ""
     fi
     
     # Add Appodeal entries
     if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
-        echo "# ========== Appodeal Source =========="
         cat "$APPODEAL_LOCAL"
-        echo ""
     fi
     
     # Add Yandex entries
     if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
-        echo "# ========== Yandex Source =========="
         cat "$YANDEX_LOCAL"
-        echo ""
     fi
 } > "$TEMP_DIR/combined.txt"
 
-# Separate comments and entries, then deduplicate
+# Process: normalize, separate comments from entries, deduplicate
 {
-    # Keep header comments
-    grep "^#" "$TEMP_DIR/combined.txt" | head -5
+    echo "# Consolidated app-ads.txt"
+    echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+    echo "# Generated from: CAS, Appodeal, Yandex"
+    echo ""
+    
+    # Extract and normalize all entries
+    while IFS= read -r line; do
+        if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]]; then
+            continue  # Skip empty lines
+        fi
+        normalize_entry "$line"
+    done < "$TEMP_DIR/combined.txt" > "$TEMP_DIR/normalized.txt"
+    
+    # Separate comments from entries
+    grep "^#" "$TEMP_DIR/normalized.txt" || true
     echo ""
     
     # Get all non-comment, non-empty lines, deduplicate, and sort
-    grep -v "^#" "$TEMP_DIR/combined.txt" | \
+    grep -v "^#" "$TEMP_DIR/normalized.txt" | \
     grep -v "^[[:space:]]*$" | \
-    sed 's/[[:space:]]*$//' | \
-    sort | \
-    uniq
+    sort -u
 } > "$OUTPUT_FILE"
 
 # Add summary stats as comments at the end
 {
     echo ""
     echo "# ========== Statistics =========="
+    ENTRY_COUNT=$(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)
+    echo "# Total unique entries: $ENTRY_COUNT"
     echo "# Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-    echo "# Total entries: $(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)"
 } >> "$OUTPUT_FILE"
 
 # Cleanup temp files
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "✓ Done! Deduplicated file created at $OUTPUT_FILE"
-echo "  Total entries: $(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)"
+echo "✓ Done! Deduplicated and normalized file created at $OUTPUT_FILE"
+echo "  Total unique entries: $ENTRY_COUNT"
 echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
