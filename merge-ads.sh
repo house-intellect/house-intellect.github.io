@@ -100,8 +100,8 @@ echo "Merging sources..."
     fi
 } > "$TEMP_DIR/combined.txt"
 
-# Process: validate, normalize, deduplicate
-echo "Validating and deduplicating..."
+# Process: validate and normalize (no deduplication or sorting)
+echo "Validating and normalizing..."
 {
     echo "# Consolidated app-ads.txt"
     echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
@@ -112,8 +112,8 @@ echo "Validating and deduplicating..."
     while IFS= read -r line; do
         validate_and_fix_line "$line"
     done < "$TEMP_DIR/combined.txt" | \
-    # Remove empty lines and duplicates, then sort
-    grep -v "^[[:space:]]*$" | sort -u
+    # Remove only empty lines (no sorting or deduplication)
+    grep -v "^[[:space:]]*$"
 } > "$OUTPUT_FILE"
 
 # Add summary stats and ensure proper ending
@@ -121,7 +121,7 @@ echo "Validating and deduplicating..."
     echo ""
     echo "# ========== Statistics =========="
     ENTRY_COUNT=$(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)
-    echo "# Total unique entries: $ENTRY_COUNT"
+    echo "# Total entries: $ENTRY_COUNT"
     echo "# Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
 } >> "$OUTPUT_FILE"
 
@@ -132,6 +132,6 @@ ensure_newline "$OUTPUT_FILE"
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "✓ Done! Validated and deduplicated file created"
-echo "  Total unique valid entries: $ENTRY_COUNT"
+echo "✓ Done! Validated and normalized file created"
+echo "  Total entries: $ENTRY_COUNT"
 echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
