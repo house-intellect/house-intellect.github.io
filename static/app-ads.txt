@@ -1,5 +1,5 @@
 # Consolidated app-ads.txt
-# Last Updated: 2026-07-26 02:01:28 UTC
+# Last Updated: 2026-07-27 02:09:08 UTC
 # Generated from: CAS, Appodeal, Yandex
 
 # CAS.ai Updated Jul 13, 2026
@@ -5498,4 +5498,4 @@ adsinteractive.com,814370,RESELLER
 
 # ========== Statistics ==========
 # Total entries: 5455
-# Generated: 2026-07-26 02:02:11 UTC
+# Generated: 2026-07-27 02:09:52 UTC
