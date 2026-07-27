@@ -11,7 +11,7 @@ TEMP_DIR="temp_ads"
 APPODEAL_LOCAL="$STATIC_DIR/app_ads_txt.txt"
 YANDEX_LOCAL="$STATIC_DIR/app-ads ya ru.txt"
 
-# Public Remote Source
+# Public Remote Sources
 CAS_URL="https://cas.ai/app-ads.txt"
 
 # Create temp directory
@@ -48,82 +48,36 @@ if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
     ensure_newline "$YANDEX_LOCAL"
 fi
 
-# Function to validate and fix lines
-validate_and_fix_line() {
-    local line="$1"
-    
-    # Skip empty lines and comments
-    if [[ -z "$line" || "$line" =~ ^[[:space:]]*$ || "$line" =~ ^# ]]; then
-        echo "$line"
-        return
-    fi
-    
-    # Remove leading/trailing whitespace
-    line=$(echo "$line" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-    
-    # Skip non-standard entries
-    if [[ "$line" =~ ^[a-zA-Z]+= ]]; then
-        return
-    fi
-    
-    # Normalize: remove spaces around commas
-    line=$(echo "$line" | sed 's/[[:space:]]*,[[:space:]]*/,/g')
-    
-    # Check for valid format: domain,id,type[,cert] (3-4 comma-separated fields)
-    if [[ "$line" =~ ^[a-zA-Z0-9._-]+,[^,]+,(DIRECT|RESELLER)(,[a-zA-Z0-9]+)?$ ]]; then
-        # Convert domain to lowercase for normalization
-        local domain=$(echo "$line" | cut -d',' -f1 | tr '[:upper:]' '[:lower:]')
-        local rest=$(echo "$line" | cut -d',' -f2-)
-        echo "$domain,$rest"
-    else
-        # Invalid line - skip
-        return
-    fi
-}
-
-# Combine all sources with explicit newlines
+# Combine all sources WITHOUT any normalization - preserve exactly as they are
 echo "Merging sources..."
-{
-    if [ -s "$TEMP_DIR/cas.txt" ]; then
-        cat "$TEMP_DIR/cas.txt"
-        echo ""  # Explicit newline separator
-    fi
-    
-    if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
-        cat "$APPODEAL_LOCAL"
-        echo ""  # Explicit newline separator
-    fi
-    
-    if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
-        cat "$YANDEX_LOCAL"
-        echo ""  # Explicit newline separator
-    fi
-} > "$TEMP_DIR/combined.txt"
-
-# Process: validate and normalize (no deduplication or sorting)
-echo "Validating and normalizing..."
 {
     echo "# Consolidated app-ads.txt"
     echo "# Last Updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
     echo "# Generated from: CAS, Appodeal, Yandex"
+    echo "# NOTE: Content from each provider is preserved exactly as-is without any modifications"
     echo ""
     
-    # Process each line
-    while IFS= read -r line; do
-        validate_and_fix_line "$line"
-    done < "$TEMP_DIR/combined.txt" | \
-    # Remove only empty lines (no sorting or deduplication)
-    grep -v "^[[:space:]]*$"
-} > "$OUTPUT_FILE"
-
-# Add summary stats and ensure proper ending
-{
+    if [ -s "$TEMP_DIR/cas.txt" ]; then
+        echo "# ========== CAS (Clever Ads Solutions) =========="
+        cat "$TEMP_DIR/cas.txt"
+    fi
+    
+    if [ -f "$APPODEAL_LOCAL" ] && [ -s "$APPODEAL_LOCAL" ]; then
+        echo "# ========== Appodeal =========="
+        cat "$APPODEAL_LOCAL"
+    fi
+    
+    if [ -f "$YANDEX_LOCAL" ] && [ -s "$YANDEX_LOCAL" ]; then
+        echo "# ========== Yandex =========="
+        cat "$YANDEX_LOCAL"
+    fi
+    
     echo ""
     echo "# ========== Statistics =========="
-    ENTRY_COUNT=$(grep -vc "^#\|^[[:space:]]*$" "$OUTPUT_FILE" || echo 0)
+    ENTRY_COUNT=$(grep -vc "^#\|^[[:space:]]*$" "$TEMP_DIR/combined.txt" 2>/dev/null || echo 0)
     echo "# Total entries: $ENTRY_COUNT"
     echo "# Generated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-} >> "$OUTPUT_FILE"
+} > "$OUTPUT_FILE"
 
 # Ensure file ends with newline
 ensure_newline "$OUTPUT_FILE"
@@ -132,6 +86,5 @@ ensure_newline "$OUTPUT_FILE"
 rm -rf "$TEMP_DIR"
 
 echo ""
-echo "✓ Done! Validated and normalized file created"
-echo "  Total entries: $ENTRY_COUNT"
+echo "✓ Done! Merged file created with all provider content preserved as-is"
 echo "  File size: $(du -h "$OUTPUT_FILE" | cut -f1)"
