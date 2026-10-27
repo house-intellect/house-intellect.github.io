@@ -1,10 +1,11 @@
 # Consolidated app-ads.txt
-# Last Updated: 2026-10-26 02:32:08 UTC
+# Last Updated: 2026-10-27 03:06:50 UTC
 # Generated from: CAS, Appodeal, Yandex
 # NOTE: Content from each provider is preserved exactly as-is without any modifications
 
 # ========== CAS (Clever Ads Solutions) ==========
 # CAS.ai Updated Oct 20, 2026
+# republish hook check 2026-10-26
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
 #=== GoogleAds Apr 27, 2026
@@ -12957,4 +12958,4 @@ orbrx.ai, 8000869124, RESELLER
 
 # ========== Statistics ==========
 # Total entries: 0
-# Generated: 2026-10-26 02:32:08 UTC
+# Generated: 2026-10-27 03:06:50 UTC
